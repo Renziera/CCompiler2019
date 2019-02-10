@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'CCompiler'),
 
     /*
     |--------------------------------------------------------------------------
@@ -169,11 +169,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        CCompiler\Providers\AppServiceProvider::class,
+        CCompiler\Providers\AuthServiceProvider::class,
+        // CCompiler\Providers\BroadcastServiceProvider::class,
+        CCompiler\Providers\EventServiceProvider::class,
+        CCompiler\Providers\RouteServiceProvider::class,
 
     ],
 
