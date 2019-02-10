@@ -11,10 +11,32 @@
 |
 */
 
+/**
+ * Routes untuk guest (semua orang bisa akses)
+ */
 Route::get('/', function () {
     return view('welcome');
 });
 
+Route::view('/kompetisi/cp', 'competition.cp');
+Route::view('/kompetisi/ctf', 'competition.ctf');
+Route::view('/kompetisi/ppl', 'competition.ppl');
+Route::view('/kompetisi/iot', 'competition.iot');
+Route::view('/kompetisi/ux', 'competition.ux');
+
 Auth::routes();
 
+/**
+ * Routes untuk peserta
+ */
+
 Route::get('/home', 'HomeController@index')->name('home');
+
+/**
+ * Routes untuk reviewer
+ */
+
+
+ /**
+  * Routes untuk admin
+  */
