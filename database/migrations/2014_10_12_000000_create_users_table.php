@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('username')->unique();
             $table->string('password');
             $table->unsignedTinyInteger('role')->default(0);
+            $table->string('cabang')->nullable(true);
             $table->rememberToken();
             $table->timestamps();
         });

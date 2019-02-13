@@ -29,14 +29,14 @@ class User extends Authenticatable
     ];
 
     public function members(){
-        return $this->hasMany('App\Member');
+        return $this->hasMany('CCompiler\Member');
     }
 
-    public function proposals(){
-        return $this->hasOne('App\Proposal');
+    public function proposal(){
+        return $this->hasOne('CCompiler\Proposal');
     }
 
     public function reviews(){
-        return $this->hasMany('App\Review');
+        return $this->hasMany('CCompiler\Review');
     }
 }

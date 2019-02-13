@@ -26,17 +26,28 @@ Route::view('/kompetisi/ux', 'competition.ux');
 
 Auth::routes();
 
+Route::view('/illegal', 'illegal');
+
 /**
  * Routes untuk peserta
  */
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'DashboardController@index')->name('home');
+
 
 /**
  * Routes untuk reviewer
  */
 
-
+Route::get('/review/all', 'ReviewController@getAllReview');
+Route::get('/review/reviewed', 'ReviewController@getReviewed');
+Route::get('/review/unreviewed', 'ReviewController@getUnreviewed');
+Route::post('/review/submit', 'ReviewController@createReview');
+ 
  /**
   * Routes untuk admin
   */
+  
+Route::get('/admin/manage', 'AdminController@manageUsers');
+Route::post('/admin/approve', 'AdminController@approveReviewer');
+Route::get('/admin/proposal', 'AdminController@viewProposals');
