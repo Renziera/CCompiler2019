@@ -8,8 +8,12 @@
                 <div class="card-header">Dashboard Reviewer</div>
 
                 <div class="card-body">
-                    
-                    You are logged in!
+                    <a href="/review/all">Semua proposal</a>
+                    <br>
+                    <a href="/review/unreviewed">Belum di review</a>
+                    <br>
+                    <a href="/review/reviewed">Sudah di review</a>
+                    <br>
                 </div>
             </div>
         </div>

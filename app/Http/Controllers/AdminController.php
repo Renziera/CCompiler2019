@@ -59,5 +59,53 @@ class AdminController extends Controller
             return redirect('/illegal');
         }
 
+        $proposals = Proposal::All();
+        $data = array();
+        foreach($proposals as $proposal){
+            $data[$proposal->id]['nama'] = $proposal->user->name;
+            $data[$proposal->id]['cabang'] = $proposal->cabang;
+            $data[$proposal->id]['link'] = $proposal->filename;
+            if($proposal->reviews->count() === 0){
+                $data[$proposal->id]['reviewed'] = true;
+                $data[$proposal->id]['kriteria1'] = 'Belum ada nilai';
+                $data[$proposal->id]['kriteria2'] = 'Belum ada nilai';
+                $data[$proposal->id]['kriteria3'] = 'Belum ada nilai';
+                $data[$proposal->id]['kriteria4'] = 'Belum ada nilai';
+                $data[$proposal->id]['kriteria5'] = 'Belum ada nilai';
+                $data[$proposal->id]['total'] = 'Belum ada nilai';
+            }else{
+                $data[$proposal->id]['reviewed'] = true;
+                $kriteria1 = 0;
+                $kriteria2 = 0;
+                $kriteria3 = 0;
+                $kriteria4 = 0;
+                $kriteria5 = 0;
+                $total = 0;
+                $amount = 0;
+                $reviews = $proposal->reviews;
+                foreach($reviews as $review){
+                    $kriteria1 += $review->kriteria_1;
+                    $kriteria2 += $review->kriteria_2;
+                    $kriteria3 += $review->kriteria_3;
+                    $kriteria4 += $review->kriteria_4;
+                    $kriteria5 += $review->kriteria_5;
+                    $total += $review->total;
+                    $amount++;
+                }
+                $kriteria1 = $kriteria1 / $amount;
+                $kriteria2 = $kriteria2 / $amount;
+                $kriteria3 = $kriteria3 / $amount;
+                $kriteria4 = $kriteria4 / $amount;
+                $kriteria5 = $kriteria5 / $amount;
+                $total = $total / $amount;
+                $data[$proposal->id]['kriteria1'] = $kriteria1;
+                $data[$proposal->id]['kriteria2'] = $kriteria2;
+                $data[$proposal->id]['kriteria3'] = $kriteria3;
+                $data[$proposal->id]['kriteria4'] = $kriteria4;
+                $data[$proposal->id]['kriteria5'] = $kriteria5;
+                $data[$proposal->id]['total'] = $total;
+            }
+        }
+        return view('review')->with('data', $data);
     }
 }

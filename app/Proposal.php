@@ -7,10 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Proposal extends Model
 {
     public function user(){
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('CCompiler\User');
     }
 
     public function reviews(){
-        return $this->hasMany('App\Review');
+        return $this->hasMany('CCompiler\Review');
     }
 }
