@@ -8,8 +8,9 @@
                 <div class="card-header">Dashboard Admin</div>
 
                 <div class="card-body">
-                    
-                    You are logged in!
+                    <a href="/admin/manage">Manage user</a>
+                    <br>
+                    <a href="/admin/proposal">Lihat proposal</a>
                 </div>
             </div>
         </div>

@@ -21,8 +21,23 @@ class AdminController extends Controller
         if($role < 3){
             return redirect('/illegal');
         }
-
-        return view('manageuser');
+        $users = User::where('role', '<', 3)->get();
+        $data = array();
+        foreach($users as $user){
+            $data[$user->id]['name'] = $user->name;    
+            $data[$user->id]['username'] = $user->username;
+            if($user->role === 0){
+                $data[$user->id]['role'] = 'Peserta';
+                $data[$user->id]['status'] = 'OK';
+            }elseif($user->role === 1){
+                $data[$user->id]['role'] = 'Reviewer';   
+                $data[$user->id]['status'] = 'Pending';
+            }elseif($user->role === 2){
+                $data[$user->id]['role'] = 'Reviewer';   
+                $data[$user->id]['status'] = 'Approved';
+            }    
+        }
+        return view('manageuser')->with('data', $data);
     }
 
     public function approveReviewer(Request $request){
@@ -31,7 +46,7 @@ class AdminController extends Controller
             return redirect('/illegal');
         }
 
-        $user = User::find($request->user_id)->first();
+        $user = User::where('username', $request->username)->first();
         $user->role = 2;
         $user->save();
 
@@ -39,6 +54,10 @@ class AdminController extends Controller
     }
 
     public function viewProposals(){
+        $role = Auth::user()->role;
+        if($role < 3){
+            return redirect('/illegal');
+        }
 
     }
 }
