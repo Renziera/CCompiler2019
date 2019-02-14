@@ -29,6 +29,12 @@
                                             <input type="hidden" name="username" value="{{$user['username']}}">
                                             <input type="submit" value="Approve">
                                         </form>
+                                    @elseif($user['status'] == 'OK')
+                                        <form action="/admin/viewmembers" method="post">
+                                            @csrf
+                                            <input type="hidden" name="username" value="{{$user['username']}}">
+                                            <input type="submit" value="Members">
+                                        </form>
                                     @else
                                         none
                                     @endif

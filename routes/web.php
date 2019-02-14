@@ -54,3 +54,4 @@ Route::post('/review/submit', 'ReviewController@createReview');
 Route::get('/admin/manage', 'AdminController@manageUsers');
 Route::get('/admin/proposal', 'AdminController@viewProposals');
 Route::post('/admin/approve', 'AdminController@approveReviewer');
+Route::post('/admin/viewmembers', 'AdminController@viewMembers');

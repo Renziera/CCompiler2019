@@ -40,6 +40,20 @@ class AdminController extends Controller
         return view('manageuser')->with('data', $data);
     }
 
+    public function viewMembers(Request $request){
+        $role = Auth::user()->role;
+        if($role < 3){
+            return redirect('/illegal');
+        }
+
+        $user = User::where('username', $request->username)->first();
+        $members = $user->members;
+        $name = $user->name;
+        $cabang = $user->cabang;
+
+        return view('viewmember')->with('members', $members)->with('cabang', $cabang)->with('name', $name);
+    }
+
     public function approveReviewer(Request $request){
         $role = Auth::user()->role;
         if($role < 3){
