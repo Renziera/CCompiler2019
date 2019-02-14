@@ -9,7 +9,20 @@
 
                 <div class="card-body">
                     Tim anda berhasil terdaftar.
+                    @if($adaProposal)
+                    <br>
                     Proposal sudah terupload dan dalam proses.
+                    @endif
+                    <br>
+                    @foreach($members as $member)
+                        <br>
+                        Nama: {{$member->nama}}
+                        <br>
+                        NIM: {{$member->nim}}
+                        <br>
+                        Prodi: {{$member->prodi}}
+                        <br>
+                    @endforeach
                 </div>
             </div>
         </div>

@@ -21,15 +21,24 @@ class AdminController extends Controller
         if($role < 3){
             return redirect('/illegal');
         }
-        
+
+        return view('manageuser');
     }
 
-    public function approveReviewer(){
+    public function approveReviewer(Request $request){
         $role = Auth::user()->role;
         if($role < 3){
             return redirect('/illegal');
         }
+
+        $user = User::find($request->user_id)->first();
+        $user->role = 2;
+        $user->save();
+
+        return redirect('/admin/manage');
     }
 
+    public function viewProposals(){
 
+    }
 }

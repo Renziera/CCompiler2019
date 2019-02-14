@@ -40,10 +40,16 @@ class DashboardController extends Controller
             if(!$memberCount){
                 return view('daftarmember');
             }
-            if(!$proposal){
-
+            if(!$proposal && $cabang != 'cp' && $cabang != 'ctf'){
+                return view('uploadproposal');
             }
-            return view('dashboardPeserta');
+            $members = Member::where('user_id', $id)->get();
+            if($cabang == 'cp' || $cabang == 'ctf'){
+                $adaProposal = false;
+            }else{
+                $adaProposal = true;
+            }
+            return view('dashboardPeserta')->with('members', $members)->with('adaProposal', $adaProposal);
         }
 
         if($role < 2){

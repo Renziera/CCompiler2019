@@ -35,6 +35,7 @@ Route::view('/illegal', 'illegal');
 Route::get('/home', 'DashboardController@index')->name('home');
 Route::post('/peserta/cabang', 'DaftarController@setCabang');
 Route::post('/peserta/member', 'DaftarController@daftarMember');
+Route::post('/peserta/proposal', 'DaftarController@uploadProposal');
 
 
 /**
@@ -51,5 +52,5 @@ Route::post('/review/submit', 'ReviewController@createReview');
   */
   
 Route::get('/admin/manage', 'AdminController@manageUsers');
-Route::post('/admin/approve', 'AdminController@approveReviewer');
 Route::get('/admin/proposal', 'AdminController@viewProposals');
+Route::post('/admin/approve', 'AdminController@approveReviewer');
