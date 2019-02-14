@@ -33,6 +33,8 @@ Route::view('/illegal', 'illegal');
  */
 
 Route::get('/home', 'DashboardController@index')->name('home');
+Route::post('/peserta/cabang', 'DaftarController@setCabang');
+Route::post('/peserta/member', 'DaftarController@daftarMember');
 
 
 /**

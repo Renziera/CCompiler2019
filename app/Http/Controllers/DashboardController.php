@@ -33,8 +33,12 @@ class DashboardController extends Controller
         if($role < 1){
             $memberCount = User::find($id)->members()->count();
             $proposal = User::find($id)->proposal()->first();
+            $cabang = User::find($id)->cabang;
+            if($cabang == null){
+                return view('pilihcabang');
+            }
             if(!$memberCount){
-                echo 1232;
+                return view('daftarmember');
             }
             if(!$proposal){
 
