@@ -15,6 +15,7 @@
                             <th>Role</th>
                             <th>Status</th>
                             <th>Action</th>
+                            <th>Upgrade</th>
                         </tr>
                         @foreach($data as $user)
                             <tr>
@@ -23,13 +24,7 @@
                                 <td>{{$user['role']}}</td>
                                 <td>{{$user['status']}}</td>
                                 <td>
-                                    @if($user['status'] == 'Pending')
-                                        <form action="/admin/approve" method="post">
-                                            @csrf
-                                            <input type="hidden" name="username" value="{{$user['username']}}">
-                                            <input type="submit" value="Approve">
-                                        </form>
-                                    @elseif($user['status'] == 'OK')
+                                    @if($user['status'] == 'OK')
                                         <form action="/admin/viewmembers" method="post">
                                             @csrf
                                             <input type="hidden" name="username" value="{{$user['username']}}">
@@ -37,6 +32,17 @@
                                         </form>
                                     @else
                                         none
+                                    @endif
+                                </td>
+                                <td>
+                                    @if($user['status'] == 'OK')
+                                        <form action="/admin/approve" method="post">
+                                            @csrf
+                                            <input type="hidden" name="username" value="{{$user['username']}}">
+                                            <input type="submit" value="Upgrade">
+                                        </form>
+                                    @elseif($user['status'] == 'Approved')
+                                        Upgraded
                                     @endif
                                 </td>
                             </tr>

@@ -61,15 +61,6 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="role" class="col-md-4 col-form-label text-md-right">{{ __('Mendaftar sebagai') }}</label>
-
-                            <div class="col-md-6">
-                                <input type="radio" name="role" value="0" required>Peserta<br>
-                                <input type="radio" name="role" value="1" required>Reviewer
-                            </div>
-                        </div>
-
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
