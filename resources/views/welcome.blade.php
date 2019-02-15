@@ -88,6 +88,9 @@
     </div>
     <!--    header start-->
     <header>
+       <div class="welcome">
+           WELCOME
+       </div>
         <div class="header-kiri">
             <div class="title">
                 C-COMPILER<br>2019
