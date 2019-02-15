@@ -117,7 +117,7 @@
                     Competitive<br>Programming
                 </div>
                 <div class="button">
-                    <a href="#">Read more</a>
+                    <a href="{{ url('/kompetisi/cp') }}">Read more</a>
                 </div>
             </div>
             <div class="card-lomba">
@@ -129,7 +129,7 @@
                     Capture<br>the Flag
                 </div>
                 <div class="button">
-                    <a href="{{ url('/ctf') }}">Read more</a>
+                    <a href="{{ url('/kompetisi/ctf') }}">Read more</a>
                 </div>
             </div>
             <div class="card-lomba">
@@ -141,7 +141,7 @@
                     Pengembangan<br>Perangkat Lunak
                 </div>
                 <div class="button">
-                    <a href="#">Read more</a>
+                    <a href="{{ url('/kompetisi/ppl') }}">Read more</a>
                 </div>
             </div>
             <div class="card-lomba">
@@ -153,7 +153,7 @@
                     Internet<br>of Things
                 </div>
                 <div class="button">
-                    <a href="#">Read more</a>
+                    <a href="{{ url('/kompetisi/iot') }}">Read more</a>
                 </div>
             </div>
             <div class="card-lomba">
@@ -165,7 +165,7 @@
                     User<br>eXperience
                 </div>
                 <div class="button">
-                    <a href="#">Read more</a>
+                    <a href="{{ url('/kompetisi/ux') }}">Read more</a>
                 </div>
             </div>
         </div>
@@ -214,7 +214,7 @@
                     Organized by:
                 </div>
                 <div class="organized-logo">
-                    <img src="/image/ugm-blackwhite.gif" alt="" width="70px">
+                    <img src="/image/ugm-putih.png" alt="" width="70px">
                     <img src="/image/komatik%20hd-white.png" alt="" width="70px">
                 </div>
             </div>
