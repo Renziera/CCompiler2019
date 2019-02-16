@@ -41,7 +41,7 @@
 
         .top-right {
             position: absolute;
-            right: 150px;
+            right: 100px;
             top: 22px;
         }
 
@@ -62,6 +62,14 @@
 
         .m-b-md {
             margin-bottom: 30px;
+        }
+
+        @media screen and (max-width: 480px) {
+            .top-right {
+                position: absolute;
+                right: 10px;
+                top: 35px;
+            }
         }
     </style>
 </head>
@@ -88,9 +96,9 @@
     </div>
     <!--    header start-->
     <header>
-       <div class="welcome">
-           WELCOME
-       </div>
+        <div class="welcome">
+            WELCOME
+        </div>
         <div class="header-kiri">
             <div class="title">
                 C-COMPILER<br>2019
@@ -100,7 +108,7 @@
             </div>
         </div>
         <div class="header-kanan">
-            <img src="/image/ilus-welcome.png" alt="Gamuncul" width="600px">
+            <img src="/image/ilus-welcome.png" alt="" width="40%">
         </div>
     </header>
     <!--    header end-->
