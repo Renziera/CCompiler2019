@@ -20,9 +20,15 @@
     background-repeat: no-repeat;
 }
 
+.navbar-brand{
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
 .navbar-brand:hover{
     transform: scale(1.2);
-    transition: transform .3s;
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -30,11 +36,14 @@
     font-size: 13pt;
     font-family: 'Montserrat';
     font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
     transform: scale(1.2);
-    transition: transform .3s;
     color: white;
 }
 
@@ -44,7 +53,8 @@
     margin-left: 30px;
     margin-right: 30px;
     border-radius: 30px;
-    margin-top: 10vh;    
+    margin-top: 10vh; 
+    animation: ani 1.5s 1;
 }
 
 .card-body{
@@ -73,8 +83,26 @@
     line-height: 30px;
     justify-content: center;
     margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 
 .btn-primary:hover{
    opacity: 0.8;
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.01;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
 }
