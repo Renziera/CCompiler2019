@@ -9,6 +9,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="/css/home.css">
@@ -51,13 +52,19 @@
         }
 
         .links>a {
-            color: #636b6f;
+            margin-top: 20px;
+            font-family: 'Montserrat';
+            color: white;
             padding: 0 25px;
             font-size: 13px;
             font-weight: 600;
-            letter-spacing: .1rem;
             text-decoration: none;
-            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 13pt;
+        }
+        
+        .links a:hover{
+            transform: scale(2.0);
         }
 
         .m-b-md {
@@ -92,13 +99,18 @@
         @endif
     </div>
     <div class="nav-logo">
-        <a href="#"><img src="/image/ccomp%20hd-grey.png" alt="" width="100px"></a>
+        <a href="#"><img src="/image/ccomp%20hd-white.png" alt="" width="100px"></a>
     </div>
     <!--    header start-->
     <header>
         <div class="welcome">
             WELCOME
         </div>
+        
+        <div class="header-kanan">
+            <img src="/image/ilus-welcome.png" alt="" width="40%">
+        </div>
+        
         <div class="header-kiri">
             <div class="title">
                 C-COMPILER<br>2019
@@ -107,9 +119,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius molestiae, eligendi obcaecati vitae temporibus illo natus corporis suscipit aliquam, nihil dolores, iure inventore deleniti ullam harum consequuntur amet, cupiditate cum officia maxime numquam. At, molestias, quia voluptatibus odio fugit officiis.
             </div>
         </div>
-        <div class="header-kanan">
-            <img src="/image/ilus-welcome.png" alt="" width="40%">
-        </div>
+
     </header>
     <!--    header end-->
 
