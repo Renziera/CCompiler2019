@@ -76,7 +76,6 @@
             </nav>
 
         <main class="py-4">
-            @yield('content')
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-8">
