@@ -77,70 +77,68 @@
 
             <main class="py-4">
                 @yield('content')
-                <div class="container count">
+                <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-8">
                             <div class="card">
-                                <div class="card-header">Competitive Programming</div>
+                                <div class="card-header">
+                                    <div class="logo-kompetisi">
+                                        <img src="/image/icon-cp.png" alt="" width="100px">
+                                    </div>
+                                    <div class="card-name">
+                                        <div class="nama-kompetisi">
+                                            Competitive Programming
+                                        </div>
+                                        <div class="desc-kompetisi">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam fuga numquam minus ab aliquid cumque iste suscipit veritatis id eos! Lorem
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <div class="card-body">
-                                    Kompetisi paling gak faedah gan
+                                    <div class="desc2-kompetisi">
+                                        <div class="prize">
+                                            <div class="title-prize">
+                                                Prize :
+                                            </div>
+                                            <div class="desc-prize">
+                                                <table>
+                                                    <tr>
+                                                        <td>Juara I</td>
+                                                        <td>: Rp. 1.000.000,00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Juara II</td>
+                                                        <td>: Rp. 600.000,00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Juara III</td>
+                                                        <td>: Rp. 400.000,00</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="contact-person">
+                                            <div class="title-contact">
+                                                Contact Person :
+                                            </div>
+                                            <div class="desc-contact">
+                                                Line: @ju76hb<br>
+                                                Instagram: @ccompiler2019<br>
+                                                No HP: 0813817432
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="guide-book">
+                                        <div class="click">
+                                            click for
+                                        </div>
+                                        <div class="download-book">
+                                            <a href="#">Guide Book</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-kompetisi">
-                    <div class="logo-kompetisi">
-                        <img src="/image/icon-cp.png" alt="" width="100px">
-                    </div>
-                    <div class="card-name">
-                        <div class="nama-kompetisi">
-                            Competitive Programming
-                        </div>
-                        <div class="desc-kompetisi">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam fuga numquam minus ab aliquid cumque iste suscipit veritatis id eos! Lorem
-                        </div>
-                    </div>
-                    <div class="desc2-kompetisi">
-                        <div class="prize">
-                            <div class="title-prize">
-                                Prize :
-                            </div>
-                            <div class="desc-prize">
-                                <table>
-                                    <tr>
-                                        <td>Juara I</td>
-                                        <td>: Rp. 1.000.000,00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Juara II</td>
-                                        <td>: Rp. 600.000,00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Juara III</td>
-                                        <td>: Rp. 400.000,00</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="contact-person">
-                            <div class="title-contact">
-                                Contact Person :
-                            </div>
-                            <div class="desc-contact">
-                                Line: @ju76hb<br>
-                                Instagram: @ccompiler2019<br>
-                                No HP: 0813817432
-                            </div>
-                        </div>
-                    </div>
-                    <div class="guide-book">
-                        <div class="click">
-                            click for
-                        </div>
-                        <div class="download-book">
-                            <a href="#">Guide Book</a>
                         </div>
                     </div>
                 </div>

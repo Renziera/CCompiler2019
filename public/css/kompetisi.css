@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-.count {
-    display: none;
-}
-
 .navbar-brand{
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -34,7 +30,11 @@
 
 .navbar-light .navbar-nav .nav-link:hover{
     transform: scale(1.2);
-    color: white;
+    color: #6C36D2;
+}
+
+.nav-link a:hover{
+    color: #6C36D2;
 }
 
 .bg-lomba::after {
@@ -48,6 +48,17 @@
     background-image: url(/../image/bg-lomba.png);
 }
 
+.card{
+    text-align: center;
+    border-radius: 35px;
+    margin-top: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    animation: ani 1.5s 1;
+    padding-right: 20px;
+}
+
 .card-kompetisi {
     width: 70%;
     text-align: center;
@@ -55,7 +66,6 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    animation: ani 1.5s 1;
     padding-left: 15%;
     padding-right: 15%;
     padding-top: 40px;
