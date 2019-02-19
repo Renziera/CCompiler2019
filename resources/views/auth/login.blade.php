@@ -26,7 +26,7 @@
 <body>
     <div class="bg-login">
         <div id="app">
-            <nav class="navbar navbar-expand-md navbar-light">
+            <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
                 <div class="container">
                     <a class="navbar-brand" href="{{ url('/') }}">
                         <img src="/image/ccomp%20hd-white.png" alt="" width="100px">

@@ -13,6 +13,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <style>
@@ -62,8 +63,8 @@
             font-weight: 700;
             font-size: 13pt;
         }
-        
-        .links a:hover{
+
+        .links a:hover {
             transform: scale(2.0);
         }
 
@@ -106,11 +107,11 @@
         <div class="welcome">
             WELCOME
         </div>
-        
+
         <div class="header-kanan">
             <img src="/image/ilus-welcome.png" alt="" width="40%">
         </div>
-        
+
         <div class="header-kiri">
             <div class="title">
                 C-COMPILER<br>2019
@@ -130,7 +131,7 @@
         </div>
         <div class="card">
             <div class="card-lomba">
-
+                
                 <div class="card-img">
                     <img src="/image/icon-cp.png" alt="" width="90px">
                 </div>
