@@ -17,7 +17,7 @@
     transform: scale(1.2);
 }
 
-.navbar-light .navbar-nav .nav-link{
+ .nav-link{
     color: white;
     font-size: 13pt;
     font-family: 'Montserrat';

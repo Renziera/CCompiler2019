@@ -51,7 +51,12 @@
             text-align: center;
             display: none;
         }
-
+        
+        .card{
+            background-color: #F9FBFC;
+            border: none;
+        }
+        
         .links>a {
             margin-top: 20px;
             font-family: 'Montserrat';
