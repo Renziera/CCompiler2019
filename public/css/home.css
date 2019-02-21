@@ -18,7 +18,7 @@
     font-family: 'Montserrat', sans-serif;
     position: absolute;
     font-size: 55px;
-    color: #6C36D2;
+    color: white;
     margin-top: 350px;
     text-align: center;
     width: 100%;
@@ -260,6 +260,11 @@ footer .copyright {
     padding-right: 50px;
 }
 
+.social-media a:hover {
+    color: #F9FBFC;
+    text-decoration: none;
+}
+
 .organized-text {
     color: #F9FBFC;
     padding-top: 30px;
@@ -283,7 +288,7 @@ footer .copyright {
     }
 
     90% {
-        opacity: 0.05;
+        opacity: 0.01;
     }
 
     100% {
