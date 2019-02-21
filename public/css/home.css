@@ -192,6 +192,7 @@ header .header-kiri div {
 
 .button a:hover {
     color: #6C36D2;
+    text-decoration: none;
 }
 
 .card-gallery img {
