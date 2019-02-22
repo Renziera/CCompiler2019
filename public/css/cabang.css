@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-cabang::after {
+    background-image: url(/../image/bg-daftarmember.png);
+    content: " ";
+    width: 110%;
+    height: 110%;
+    top: -5%;
+    left: -5%;
+    position: fixed;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar-brand {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.2);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-size: 13pt;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    transform: scale(1.2);
+    color: #6C36D2;
+}
+
+.card-header{
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    color: white;
+    animation: ani 1.5s 1;
+    font-weight: 700;
+}
+
+.card{
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px -2px #000000;
+    animation: ani 1.5s 1;
+    width: auto;
+}
+
+.pilih-lomba .inside div{
+    display: inline-block;
+}
+
+.pilih-lomba{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.all-lomba{
+    text-align: center;
+    width: 100%;
+}
+
+.input-lomba{
+    margin-right: 15px;
+}
+
+.inside{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: left;
+}
+
+.logo img{
+    margin-right: 15px;
+}
+
+.nama-lomba{
+    font-family: 'Nunito';
+    font-size: 16px;
+}
+
+.btn.btn-primary {
+    border-radius: 30px;
+    width: 150px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12pt;
+    border: none;
+    text-align: center;
+    background-image: linear-gradient(135deg, #73A3F8, #63E4FE);
+    letter-spacing: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    line-height: 30px;
+    justify-content: center;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.btn.btn-primary:hover {
+    opacity: 0.8;
+}
+
+.card-button{
+    text-align: center;
+    margin-left: 0;
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.01;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
