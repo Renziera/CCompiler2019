@@ -58,6 +58,18 @@
     font-weight: 700;
 }
 
+.card-header2{
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    color: white;
+    animation: ani 1.5s 1;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
 .card{
     border: none;
     border-radius: 30px;
@@ -128,6 +140,63 @@
 .card-button{
     text-align: center;
     margin-left: 0;
+}
+
+.anggota{
+    text-align: center;
+    width: 14%;
+    margin-left: 43%;
+    margin-right: 43%;
+    padding: 5px;
+    border-radius: 25px;
+    background-color: aquamarine;
+    margin-bottom: 25px;
+}
+
+label{
+    margin-bottom: 0;
+    color: #6C36D2;
+    font-weight: 900;
+}
+
+.last{
+    margin-bottom: 30px;
+}
+
+.form-control{
+    border-color: grey;
+}
+
+.upload{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;   
+    text-align: center;
+    
+}
+
+input#proposal{
+    width: 290px;
+    color: red;
+    width: 185px;
+    margin-bottom: 20px;
+}
+
+input[type="file" i] {
+    -webkit-appearance: initial;
+    background-color: initial;
+    cursor: default;
+    padding: initial;
+    border: initial;
+}
+
+.text-upload{
+    font-family: 'Montserrat';
+    font-weight: 900;
+    color: black;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 @keyframes ani {
