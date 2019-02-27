@@ -144,13 +144,17 @@
 
 .anggota{
     text-align: center;
-    width: 14%;
+    width: 25%;
     margin-left: 43%;
     margin-right: 43%;
     padding: 5px;
     border-radius: 25px;
-    background-color: aquamarine;
+    background-image: linear-gradient(130deg, #AB47BC, #E1BEE7);
     margin-bottom: 25px;
+}
+
+.label-anggota{
+    color: white;
 }
 
 label{
@@ -212,3 +216,4 @@ input[type="file" i] {
         opacity: 1.0;
     }
 }
+

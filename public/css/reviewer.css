@@ -52,8 +52,25 @@
     color: #6C36D2;
 }
 
+.card-header{
+    background: none;
+    border-bottom: none;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    justify-content: center;
+}
+
+.card-header h1{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 30pt;
+    color: white;
+    align-items: center;
+}
+
 .card-body {
-    margin-top: 80px;
+
     width: 100%;
     text-align: center;
 }
