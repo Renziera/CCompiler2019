@@ -218,3 +218,34 @@
         bottom: 0px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .navbar-light .navbar-nav .nav-link:hover {
+        transform: scale(1);
+        color: #6C36D2;
+    }
+
+    .navbar-light .navbar-nav .nav-link:focus {
+        color: white;
+    }
+}
+
+@media screen and (max-width: 464px){
+    .login-right{
+        width: 49%;
+    }
+    
+    .login-image img{
+        width: 160px;
+    }
+    
+    .card-body{
+        bottom: -10px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .login-right{
+        width: 48.9%;
+    }
+}
