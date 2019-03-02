@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-brand{
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand:hover{
+    transform: scale(1.2);
+}
+
+ .nav-link{
+    color: white;
+    font-size: 13pt;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    transform: scale(1.2);
+    color: #6C36D2;
+}
+
+.nav-link a:hover{
+    color: #6C36D2;
+}
+
+.navbar-laravel {
+    background-image: linear-gradient(130deg, #62E7FE, #7D7BF4);
+}
+
+.bg-review::after {
+    background-image: url(../image/bg-daftarmember.svg);
+    content: " ";
+    width: 110%;
+    height: 110%;
+    top: -5%;
+    left: -5%;
+    position: fixed;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-header{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+.card-header h1{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-align: center;
+}
+
+.card{
+    border-radius: 30px;
+    padding: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-body{
+    border: none;
+}
+
+.card-body th{
+    color: purple;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 8px;
+    padding-left: 4px;
+    background-color: #f9e6ff;
+}
+
+input[type=number]{
+    margin-bottom: 10px;
+    background-color: #f9e6ff;
+}
+
+input[type=submit]{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    width: 150px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12pt;
+    border: none;
+    text-align: center;
+    background-image: linear-gradient(135deg, #73A3F8, #63E4FE);
+    color: white;
+    padding: 3px;
+     line-height: 30px;
+    justify-content: center;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+input[type=submit]:hover{
+    opacity: 0.6;
+}
+
+.card-body td{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+}
