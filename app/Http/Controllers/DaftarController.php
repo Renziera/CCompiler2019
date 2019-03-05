@@ -34,7 +34,7 @@ class DaftarController extends Controller
         $member1->prodi = $request->prodi1;
         $ktm = $request->file('ktm1');
         $path = $ktm->store('public/ktm');
-        $publicPath = Storage::url($path);
+        $publicPath = \Storage::url($path);
         $member1->ktm = $publicPath;
         $member1->save();
 
@@ -45,7 +45,7 @@ class DaftarController extends Controller
         $member2->prodi = $request->prodi2;
         $ktm = $request->file('ktm2');
         $path = $ktm->store('public/ktm');
-        $publicPath = Storage::url($path);
+        $publicPath = \Storage::url($path);
         $member2->ktm = $publicPath;
         $member2->save();
 
@@ -56,7 +56,7 @@ class DaftarController extends Controller
         $member3->prodi = $request->prodi3;
         $ktm = $request->file('ktm3');
         $path = $ktm->store('public/ktm');
-        $publicPath = Storage::url($path);
+        $publicPath = \Storage::url($path);
         $member3->ktm = $publicPath;
         $member3->save();
 
@@ -66,7 +66,7 @@ class DaftarController extends Controller
     public function uploadProposal(Request $request){
         $proposal = $request->file('proposal');
         $path = $proposal->store('public/proposals');
-        $publicPath = Storage::url($path);
+        $publicPath = \Storage::url($path);
         
         $id = Auth::id();
         $cabang = User::find($id)->cabang;
