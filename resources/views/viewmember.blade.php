@@ -107,6 +107,9 @@
                                             <div class="card-prodi">
                                                 Prodi: {{$member->prodi}}
                                             </div>
+                                            <div class="card-prodi">
+                                                <a href="{{$member->ktm}}" target="_blank" rel="noopener noreferrer">Lihat KTM</a>
+                                            </div>
                                         </div>
                                         @endforeach
                                     </div>

@@ -16,7 +16,7 @@ class ReviewController extends Controller
 
     public function createReview(Request $request){
         $role = Auth::user()->role;
-        if($role < 2){
+        if($role < 3){
             return redirect('/illegal');
         }
         $reviewerId = Auth::id();
@@ -38,7 +38,7 @@ class ReviewController extends Controller
     
     public function getReviewed(){
         $role = Auth::user()->role;
-        if($role < 2){
+        if($role < 3){
             return redirect('/illegal');
         }
         $reviewerId = Auth::id();
@@ -63,7 +63,7 @@ class ReviewController extends Controller
     
     public function getAllReview(){
         $role = Auth::user()->role;
-        if($role < 2){
+        if($role < 3){
             return redirect('/illegal');
         }
         $reviewerId = Auth::id();
@@ -92,7 +92,7 @@ class ReviewController extends Controller
     
     public function getUnreviewed(){
         $role = Auth::user()->role;
-        if($role < 2){
+        if($role < 3){
             return redirect('/illegal');
         }
         $reviewerId = Auth::id();

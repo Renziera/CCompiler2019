@@ -86,8 +86,9 @@
                                     @if(isset($pesan))
                                         {{ $pesan }}
                                         <br>
+                                        <br>
                                     @endif
-                                    <form method="POST" action="/peserta/member">
+                                    <form method="POST" action="/peserta/member" enctype="multipart/form-data">
                                         @csrf
 
                                         <div class="anggota">
@@ -110,11 +111,19 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group row last">
+                                        <div class="form-group row">
                                             <label for="prodi" class="col-md-4 col-form-label text-md-right">{{ __('Prodi') }}</label>
 
                                             <div class="col-md-6">
                                                 <input id="prodi" type="text" class="form-control" name="prodi1" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row last">
+                                            <label for="prodi" class="col-md-4 col-form-label text-md-right">{{ __('KTM') }}</label>
+
+                                            <div class="col-md-6">
+                                                <input id="prodi" type="file" accept="image/*" class="form-control" name="ktm1" required>
                                             </div>
                                         </div>
 
@@ -138,11 +147,19 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group row last">
+                                        <div class="form-group row">
                                             <label for="prodi" class="col-md-4 col-form-label text-md-right">{{ __('Prodi') }}</label>
 
                                             <div class="col-md-6">
                                                 <input id="prodi" type="text" class="form-control" name="prodi2" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row last">
+                                            <label for="prodi" class="col-md-4 col-form-label text-md-right">{{ __('KTM') }}</label>
+
+                                            <div class="col-md-6">
+                                                <input id="prodi" type="file" accept="image/*" class="form-control" name="ktm2" required>
                                             </div>
                                         </div>
 
@@ -166,11 +183,19 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group row last">
+                                        <div class="form-group row">
                                             <label for="prodi" class="col-md-4 col-form-label text-md-right">{{ __('Prodi') }}</label>
 
                                             <div class="col-md-6">
                                                 <input id="prodi" type="text" class="form-control" name="prodi3" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row last">
+                                            <label for="prodi" class="col-md-4 col-form-label text-md-right">{{ __('KTM') }}</label>
+
+                                            <div class="col-md-6">
+                                                <input id="prodi" type="file" accept="image/*" class="form-control" name="ktm3" required>
                                             </div>
                                         </div>
 

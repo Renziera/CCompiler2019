@@ -85,7 +85,7 @@
                                     <form method="POST" action="{{ route('register') }}">
                                         @csrf
                                         <div class="form-group row">
-                                            <label for="name" class="col-md-4 col-form-label text-md-center">{{ __('Nama') }}</label>
+                                            <label for="name" class="col-md-4 col-form-label text-md-center">{{ __('Nama Tim') }}</label>
 
                                             <div class="form-input">
                                                 <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
