@@ -18,31 +18,34 @@ class AdminController extends Controller
 
     public function manageUsers(){
         $role = Auth::user()->role;
-        if($role < 3){
+        if($role < 4){
             return redirect('/illegal');
         }
-        $users = User::where('role', '<', 3)->get();
+        $users = User::where('role', '<', 4)->get();
         $data = array();
         foreach($users as $user){
             $data[$user->id]['name'] = $user->name;    
             $data[$user->id]['username'] = $user->username;
             if($user->role === 0){
                 $data[$user->id]['role'] = 'Peserta';
-                $data[$user->id]['status'] = 'OK';
+                $data[$user->id]['status'] = 'Rejected';
             }elseif($user->role === 1){
-                $data[$user->id]['role'] = 'Reviewer';   
-                $data[$user->id]['status'] = 'Pending';
+                $data[$user->id]['role'] = 'Peserta';   
+                $data[$user->id]['status'] = 'New';
             }elseif($user->role === 2){
+                $data[$user->id]['role'] = 'Peserta';   
+                $data[$user->id]['status'] = 'Approved';
+            }elseif($user->role === 3){
                 $data[$user->id]['role'] = 'Reviewer';   
                 $data[$user->id]['status'] = 'Approved';
-            }    
+            } 
         }
         return view('manageuser')->with('data', $data);
     }
 
     public function viewMembers(Request $request){
         $role = Auth::user()->role;
-        if($role < 3){
+        if($role < 4){
             return redirect('/illegal');
         }
 
@@ -56,7 +59,20 @@ class AdminController extends Controller
 
     public function approveReviewer(Request $request){
         $role = Auth::user()->role;
-        if($role < 3){
+        if($role < 4){
+            return redirect('/illegal');
+        }
+
+        $user = User::where('username', $request->username)->first();
+        $user->role = 3;
+        $user->save();
+
+        return redirect('/admin/manage');
+    }
+
+    public function approvePeserta(Request $request){
+        $role = Auth::user()->role;
+        if($role < 4){
             return redirect('/illegal');
         }
 
@@ -67,9 +83,23 @@ class AdminController extends Controller
         return redirect('/admin/manage');
     }
 
+    public function rejectPeserta(Request $request){
+        $role = Auth::user()->role;
+        if($role < 4){
+            return redirect('/illegal');
+        }
+
+        $user = User::where('username', $request->username)->first();
+        $user->role = 0;
+        $user->members()->delete();
+        $user->save();
+
+        return redirect('/admin/manage');
+    }
+
     public function viewProposals(){
         $role = Auth::user()->role;
-        if($role < 3){
+        if($role < 4){
             return redirect('/illegal');
         }
 

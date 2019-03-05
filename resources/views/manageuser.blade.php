@@ -53,6 +53,9 @@
                             </li>
                             @endif
                             @else
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('home') }}">{{ __('Beranda') }}</a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -90,6 +93,7 @@
                                             <th>Username</th>
                                             <th>Role</th>
                                             <th>Status</th>
+                                            <th>Detail</th>
                                             <th>Action</th>
                                             <th>Upgrade</th>
                                         </tr>
@@ -100,7 +104,7 @@
                                             <td>{{$user['role']}}</td>
                                             <td>{{$user['status']}}</td>
                                             <td>
-                                                @if($user['status'] == 'OK')
+                                                @if($user['role'] == 'Peserta')
                                                 <form action="/admin/viewmembers" method="post">
                                                     @csrf
                                                     <input type="hidden" name="username" value="{{$user['username']}}">
@@ -111,13 +115,35 @@
                                                 @endif
                                             </td>
                                             <td>
-                                                @if($user['status'] == 'OK')
+                                                @if($user['role'] == 'Peserta')
+                                                @if($user['status'] == 'New')
+                                                <form action="/admin/rejectpeserta" method="post">
+                                                    @csrf
+                                                    <input type="hidden" name="username" value="{{$user['username']}}">
+                                                    <input type="submit" value="Reject">
+                                                </form>
+                                                @endif
+                                                @if($user['status'] == 'Approved')
+                                                none
+                                                @else
+                                                <form action="/admin/approvepeserta" method="post">
+                                                    @csrf
+                                                    <input type="hidden" name="username" value="{{$user['username']}}">
+                                                    <input type="submit" value="Approve">
+                                                </form>
+                                                @endif
+                                                @else
+                                                none
+                                                @endif
+                                            </td>
+                                            <td>
+                                                @if($user['role'] == 'Peserta')
                                                 <form action="/admin/approve" method="post">
                                                     @csrf
                                                     <input type="hidden" name="username" value="{{$user['username']}}">
                                                     <input type="submit" value="Upgrade">
                                                 </form>
-                                                @elseif($user['status'] == 'Approved')
+                                                @elseif($user['role'] == 'Reviewer')
                                                 Upgraded
                                                 @endif
                                             </td>

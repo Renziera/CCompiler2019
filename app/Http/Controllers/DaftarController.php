@@ -54,7 +54,7 @@ class DaftarController extends Controller
     public function uploadProposal(Request $request){
         $proposal = $request->file('proposal');
         $path = $proposal->store('public/proposals');
-        $publicPath = \Storage::url($path);
+        $publicPath = Storage::url($path);
         
         $id = Auth::id();
         $cabang = User::find($id)->cabang;

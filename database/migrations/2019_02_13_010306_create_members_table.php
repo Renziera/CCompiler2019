@@ -20,6 +20,7 @@ class CreateMembersTable extends Migration
             $table->string('nama');
             $table->string('nim');
             $table->string('prodi');
+            $table->string('ktm');
             $table->timestamps();
         });
     }

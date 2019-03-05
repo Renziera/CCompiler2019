@@ -83,6 +83,10 @@
                            <div class="card-header2">Yuk, Daftarin Anggotamu!</div>
                             <div class="card">
                                 <div class="card-body">
+                                    @if(isset($pesan))
+                                        {{ $pesan }}
+                                        <br>
+                                    @endif
                                     <form method="POST" action="/peserta/member">
                                         @csrf
 
