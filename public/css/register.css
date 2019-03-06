@@ -212,3 +212,13 @@
         color: white;
     }
 }
+
+@media screen and (max-width: 465px){
+    div.register-right{
+        display: none;
+    }
+    
+    .card-body{
+        width: 100%;
+    }
+}
