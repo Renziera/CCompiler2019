@@ -31,7 +31,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     max-height: 1400px;
-    max-width: 110vw;
+    max-width: 100vw;
 }
 header div {
     display: inline-block;
@@ -156,7 +156,7 @@ header .header-kiri div {
 
 .card-lomba:hover {
     box-shadow: 0px 0px 10px -2px #6C36D2;
-    background-color: #EDFFFF;
+    
 }
 
 .card-name {
@@ -173,8 +173,24 @@ header .header-kiri div {
 }
 
 .button a {
-    text-decoration: none;
-    color: #373435;
+    border-radius: 30px;
+    width: 150px;
+    padding: 10px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12pt;
+    border: none;
+    text-align: center;
+    background-image: linear-gradient(135deg, #73A3F8, #63E4FE);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+    line-height: 30px;
+    justify-content: center;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    color: white;
     transition-duration: 0.3s;
     transition-property: all;
     transition-timing-function: ease-in-out;
@@ -187,11 +203,10 @@ header .header-kiri div {
     -o-transition-duration: 0.3s;
     -o-transition-property: all;
     -o-transition-timing-function: ease-in-out;
-    font-size: 20px;
 }
 
 .button a:hover {
-    color: #6C36D2;
+    opacity: 0.8;
     text-decoration: none;
 }
 
@@ -363,6 +378,26 @@ footer .copyright {
 }
 
 @media screen and (max-width: 635px) {
+    .welcome{
+        font-size: 30pt;
+    }
+    .title{
+        font-size: 20pt;
+    }
+    .description{
+        font-size: 10pt;
+    }
+
+    .card-gallery img{
+        margin-left: 10px;
+        margin-right: 0px;
+        width: 70%;
+        height: 146.48px;
+    }
+    .card-lomba {
+        margin-left: 10px;
+        margin-right: 0px;
+    }
     .nav-logo {
         position: absolute;
         left: 30px;
