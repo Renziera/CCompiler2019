@@ -8,6 +8,43 @@
     box-sizing: border-box;
 }
 
+.navbar-brand {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.navbar-laravel {
+    background-image: linear-gradient(130deg, #62E7FE, #7D7BF4);
+}
+
+
+.navbar-brand:hover {
+    transform: scale(1.2);
+}
+
+.navbar{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-size: 13pt;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    transform: scale(1.2);
+    color: #6C36D2;
+}
+
 .nav-logo {
     position: absolute;
     left: 150px;
@@ -33,6 +70,7 @@ header{
     max-height: 1400px;
     max-width: 100vw;
 }
+
 header div {
     display: inline-block;
     text-align: center;
@@ -130,8 +168,8 @@ header .header-kiri div {
 
 .card-lomba {
     width: 220px;
-    margin-left: 90px;
-    margin-right: 90px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-bottom: 100px;
     padding-left: 30px;
     padding-right: 30px;
@@ -212,8 +250,8 @@ header .header-kiri div {
 
 .card-gallery img {
     /*    width: 200px;*/
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-top: 80px;
     transition: 0.3s;
     filter: brightness(75%);
@@ -329,15 +367,17 @@ footer .copyright {
 @media screen and (max-width: 1280px) {
     .header-kanan {
         position: relative;
-        text-align: center;
         margin-top: -110px;
+        width: 100%;
+        right: 0;
+        text-align: center;
     }
     
     .header-kanan img{
         width: 60%;
         margin-top: 10%;
         align-content: center;
-        margin-left: 200px;;
+        text-align: center;
     }
 
     .title,
@@ -377,6 +417,18 @@ footer .copyright {
     }
 }
 
+@media screen and (min-width: 440px){
+    .card-lomba{
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+    
+    .card-gallery img{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
 @media screen and (max-width: 635px) {
     .welcome{
         font-size: 30pt;
@@ -387,17 +439,23 @@ footer .copyright {
     .description{
         font-size: 10pt;
     }
+    
+    .header-kanan{
+        width: 100%;
+    }
 
+/*
     .card-gallery img{
-        margin-left: 10px;
-        margin-right: 0px;
         width: 70%;
         height: 146.48px;
     }
+*/
+/*
     .card-lomba {
         margin-left: 10px;
         margin-right: 0px;
     }
+*/
     .nav-logo {
         position: absolute;
         left: 30px;
@@ -412,5 +470,15 @@ footer .copyright {
     footer{
         margin-top: 0;
     }
+}
 
+@media screen and (max-width: 768px) {
+    .navbar-light .navbar-nav .nav-link:hover {
+        transform: scale(1);
+        color: #6C36D2;
+    }
+
+    .navbar-light .navbar-nav .nav-link:focus {
+        color: white;
+    }
 }
