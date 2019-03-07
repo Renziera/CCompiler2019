@@ -155,20 +155,25 @@
         <div class="welcome">
             WELCOME
         </div>
-
-        <div class="header-kanan">
-            <img src="/image/ilus-welcome.png" alt="" width="40%">
-        </div>
-
-        <div class="header-kiri">
-            <div class="title">
-                C-COMPILER<br>2019
+        <div class="container">
+            <div class="row" style="text-align: left;">
+                <div class="col-md-6">
+                    <div class="header-kiri">
+                        <div class="title">
+                            C-COMPILER<br>2019
+                        </div>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius molestiae, eligendi obcaecati vitae temporibus illo natus corporis suscipit aliquam, nihil dolores, iure inventore deleniti ullam harum consequuntur amet, cupiditate cum officia maxime numquam. At, molestias, quia voluptatibus odio fugit officiis.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="header-kanan">
+                        <img src="/image/ilus-welcome.png" alt="" width="90%">
+                    </div>
+                </div>
             </div>
-            <div class="description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius molestiae, eligendi obcaecati vitae temporibus illo natus corporis suscipit aliquam, nihil dolores, iure inventore deleniti ullam harum consequuntur amet, cupiditate cum officia maxime numquam. At, molestias, quia voluptatibus odio fugit officiis.
-            </div>
         </div>
-
     </header>
     <!--    header end-->
 
