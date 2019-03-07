@@ -19,7 +19,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="/css/cabang.css">
+    <link rel="stylesheet" href="/css/proposal.css">
 </head>
 
 <body>
