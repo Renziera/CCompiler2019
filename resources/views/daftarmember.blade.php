@@ -20,6 +20,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="/css/cabang.css">
+    <link rel="stylesheet" href="/css/daftarmember.css">
 </head>
 
 <body>
@@ -81,7 +82,7 @@
                     <div class="row justify-content-center">
                         <div class="col-md-8">
                            <div class="card-header2">Yuk, Daftarin Anggotamu!</div>
-                            <div class="card">
+                            
                                 <div class="card-body">
                                     @if(isset($pesan))
                                         {{ $pesan }}
@@ -208,7 +209,7 @@
                                         </div>
                                     </form>
                                 </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>

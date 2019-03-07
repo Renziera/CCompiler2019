@@ -89,71 +89,46 @@
                                         <div class="form-group row">
                                             <label for="cabang" class="col-md-4 col-form-label text-md-right" style="display:none;">{{ __('Cabang lomba yang diikuti') }}</label>
                                             <div class="all-lomba">
-                                                <div class="pilih-lomba">
-                                                    <div class="inside">
-                                                        <div class="input-lomba">
-                                                            <input type="radio" name="cabang" value="cp" required>
-                                                        </div>
-                                                        <div class="logo">
-                                                            <img src="/image/icon-cp.png" alt="" width="70px">
-                                                        </div>
-                                                        <div class="nama-lomba">
-                                                            Competitive Programming
-                                                        </div>
+                                                <div class="custom-control custom-radio">
+                                                    <div class="logo">
+                                                        <img src="/image/icon-cp.png" alt="" width="70px">
                                                     </div>
+                                                    <input type="radio" id="cp" name="cabang" class="custom-control-input" value="cp" required>
+                                                    <label class="custom-control-label" for="cp">Competitive <br> Programming</label>
                                                 </div>
-                                                <div class="pilih-lomba">
-                                                    <div class="inside">
-                                                        <div class="input-lomba">
-                                                            <input type="radio" name="cabang" value="ctf" required>
-                                                        </div>
-                                                        <div class="logo">
-                                                            <img src="/image/icon-ctf.png" alt="" width="70px">
-                                                        </div>
-                                                        <div class="nama-lomba">
-                                                            Capture the Flag
-                                                        </div>
+                                                
+                                                <div class="custom-control custom-radio">
+                                                    <div class="logo">
+                                                        <img src="/image/icon-ctf.png" alt="" width="70px">
                                                     </div>
+                                                    <input type="radio" id="ctf" name="cabang" class="custom-control-input" value="ctf" required>
+                                                    <label class="custom-control-label" for="ctf">Capture <br> the Flag</label>
                                                 </div>
-                                                <div class="pilih-lomba">
-                                                    <div class="inside">
-                                                        <div class="input-lomba">
-                                                            <input type="radio" name="cabang" value="ppl" required>
-                                                        </div>
-                                                        <div class="logo">
-                                                            <img src="/image/icon-ppl.png" alt="" width="70px">
-                                                        </div>
-                                                        <div class="nama-lomba">
-                                                            Pengembangan Perangkat Lunak
-                                                        </div>
+
+                                               <div class="custom-control custom-radio">
+                                                    <div class="logo">
+                                                        <img src="/image/icon-ppl.png" alt="" width="70px">
                                                     </div>
+                                                    <input type="radio" id="ppl" name="cabang" class="custom-control-input" value="ppl" required>
+                                                    <label class="custom-control-label" for="ppl">Pengembangan <br> Perangkat Lunak</label>
                                                 </div>
-                                                <div class="pilih-lomba">
-                                                    <div class="inside">
-                                                        <div class="input-lomba">
-                                                            <input type="radio" name="cabang" value="iot" required>
-                                                        </div>
-                                                        <div class="logo">
-                                                            <img src="/image/icon-iot.png" alt="" width="70px">
-                                                        </div>
-                                                        <div class="nama-lomba">
-                                                            Internet of Things
-                                                        </div>
+                                               
+                                                <div class="custom-control custom-radio">
+                                                    <div class="logo">
+                                                        <img src="/image/icon-iot.png" alt="" width="70px">
                                                     </div>
+                                                    <input type="radio" id="iot" name="cabang" class="custom-control-input" value="iot" required>
+                                                    <label class="custom-control-label" for="iot">Internet of <br> Things (IoT)</label>
                                                 </div>
-                                                <div class="pilih-lomba">
-                                                    <div class="inside">
-                                                        <div class="input-lomba">
-                                                            <input type="radio" name="cabang" value="ux" required>
-                                                        </div>
-                                                        <div class="logo">
-                                                            <img src="/image/icon-ux.png" alt="" width="70px">
-                                                        </div>
-                                                        <div class="nama-lomba">
-                                                            User eXperience
-                                                        </div>
+
+                                                <div class="custom-control custom-radio">
+                                                    <div class="logo">
+                                                        <img src="/image/icon-ux.png" alt="" width="70px">
                                                     </div>
+                                                    <input type="radio" id="ux" name="cabang" class="custom-control-input" value="ux" required>
+                                                    <label class="custom-control-label" for="ux">User eXperience <br> (UX)</label>
                                                 </div>
+
                                             </div>
                                         </div>
 

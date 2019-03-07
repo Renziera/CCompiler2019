@@ -76,9 +76,10 @@
     box-shadow: 0px 0px 10px -2px #000000;
     animation: ani 1.5s 1;
     width: auto;
+    display: inline-block;
 }
 
-.pilih-lomba .inside div {
+/*.pilih-lomba .inside div {
     display: inline-block;
 }
 
@@ -86,11 +87,39 @@
     margin-top: 15px;
     margin-bottom: 15px;
     width: 100%;
+}*/
+
+.card-body {
+    padding-top: 5%;
+    width: 100%;
+    align-content: center;
 }
 
 .all-lomba {
     text-align: center;
     width: 100%;
+}
+
+.logo img{
+    margin-top: 10px;
+}
+
+.custom-control{
+    padding-left: 3.5rem;
+    padding-right: 2rem;
+    display: inline-block;
+    border-bottom: 1pt solid steelblue;
+    padding-top: 5px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+
+.custom-control-label{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: steelblue;
+    font-size: 12pt;
+    text-align: left;
 }
 
 .input-lomba {
@@ -105,6 +134,7 @@
 }
 
 .logo img {
+    margin-top: 25px;
     margin-right: 15px;
 }
 
@@ -126,11 +156,13 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     line-height: 30px;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
+    position: relative;
+    margin-top: 20px;
 }
 
 .btn.btn-primary:hover {
@@ -144,9 +176,10 @@
 
 .anggota {
     text-align: center;
-    width: 25%;
-    margin-left: 37.5%;
-    margin-right: 37.5%;
+    width: 150px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
     padding: 5px;
     border-radius: 25px;
     background-image: linear-gradient(130deg, #AB47BC, #E1BEE7);
