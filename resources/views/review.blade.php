@@ -93,7 +93,7 @@
                                             <th>Cabang</th>
                                             <th>Proposal</th>
                                             <th>Status</th>
-                                            <th>Penilaian</th>
+                                            <th  class="penilaian">Penilaian</th>
                                         </tr>
                                         @foreach($data as $proposal)
                                         <tr>

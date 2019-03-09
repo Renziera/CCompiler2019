@@ -82,7 +82,7 @@
                 @yield('content')
                 <div class="container">
                    <div class="card-header">
-                   <h1>Dashboard Reviewer</h1>
+                   <h1>Review Proposal</h1>
                    </div>
                     <div class="card-body">
                         <div class="card-proposal">

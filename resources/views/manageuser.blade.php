@@ -108,7 +108,7 @@
                                                 <form action="/admin/viewmembers" method="post">
                                                     @csrf
                                                     <input type="hidden" name="username" value="{{$user['username']}}">
-                                                    <input type="submit" value="Members">
+                                                    <input type="submit" value="Members" class="btn btn-outline-info">
                                                 </form>
                                                 @else
                                                 none
@@ -120,7 +120,7 @@
                                                 <form action="/admin/rejectpeserta" method="post">
                                                     @csrf
                                                     <input type="hidden" name="username" value="{{$user['username']}}">
-                                                    <input type="submit" value="Reject">
+                                                    <input type="submit" value="Reject" class="btn btn-outline-danger" style="margin-top: 10px;">
                                                 </form>
                                                 @endif
                                                 @if($user['status'] == 'Approved')
@@ -129,7 +129,7 @@
                                                 <form action="/admin/approvepeserta" method="post">
                                                     @csrf
                                                     <input type="hidden" name="username" value="{{$user['username']}}">
-                                                    <input type="submit" value="Approve">
+                                                    <input type="submit" value="Approve" class="btn btn-outline-success" style="margin-top: 10px;">
                                                 </form>
                                                 @endif
                                                 @else
@@ -140,8 +140,8 @@
                                                 @if($user['role'] == 'Peserta')
                                                 <form action="/admin/approve" method="post">
                                                     @csrf
-                                                    <input type="hidden" name="username" value="{{$user['username']}}">
-                                                    <input type="submit" value="Upgrade">
+                                                    <input type="hidden" name="username" value="{{$user['username']}}" >
+                                                    <input type="submit" value="Upgrade"  class="btn btn-outline-primary">
                                                 </form>
                                                 @elseif($user['role'] == 'Reviewer')
                                                 Upgraded
