@@ -219,6 +219,20 @@
     }
 }
 
+@media screen and (max-width: 892px){
+    .login-right{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (min-width: 803px){
+    .login-right{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .navbar-light .navbar-nav .nav-link:hover {
         transform: scale(1);
@@ -258,7 +272,7 @@
     .card-body{
         margin-top: 0;
         width: 100%;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
