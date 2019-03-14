@@ -83,35 +83,39 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-8">
+                            <div class="header">Dashboard Peserta</div>
                             <div class="card">
-                                <div class="card-header">Dashboard Peserta</div>
 
                                 <div class="card-body">
                                     @if($pending)
-                                        Tim anda sedang menunggu pengesahan dari panitia.
+                                    Tim anda sedang menunggu pengesahan dari panitia.
                                     @else
-                                        Tim anda berhasil terdaftar.
-                                        @if($adaProposal)
-                                        <br>
-                                        Proposal sudah terupload dan dalam proses.
-                                        @else
-                                        @if($cabang == 'cp')
-                                        <button>Masuk Platform Mooshak</button>
-                                        @endif
-                                        @if($cabang == 'ctf')
-                                        <button>Masuk Platform AsGama</button>
-                                        @endif
-                                        @endif
+                                    Tim anda berhasil terdaftar.
+                                    @if($adaProposal)
+                                    <br>
+                                    Proposal sudah terupload dan dalam proses.
+                                    @else
+                                    @if($cabang == 'cp')
+                                    <button>Masuk Platform Mooshak</button>
+                                    @endif
+                                    @if($cabang == 'ctf')
+                                    <button>Masuk Platform AsGama</button>
+                                    @endif
+                                    @endif
                                     @endif
                                     <br>
                                     <br>
-                                    <div class="card-text">
-                                        Nama tim :<br>
-                                        <div class="name">{{$name}}</div>
-                                    </div>
-                                    <div class="card-text">
-                                        Cabang lomba :<br>
-                                        <div class="name">{{$cabang}}</div>
+                                    <div class="container">
+                                       <div class="row">
+                                           <div class="col-sm-6 text-center">
+                                            <div class="name" style="padding-top: 10px;">{{$name}}</div>
+                                            <h4>Nama Tim</h4>
+                                        </div>
+                                        <div class="col-sm-6 text-center">
+                                            <div class="name" style="padding-top: 10px;">{{$cabang}}</div>
+                                            <h4>Cabang Lomba</h4>
+                                        </div>
+                                       </div>
                                     </div>
                                     <div class="foreach">
                                         @foreach($members as $member)

@@ -119,7 +119,7 @@
                                                 Kriteria 5 : {{$proposal['kriteria5']}} <br>
                                                 Total : {{$proposal['total']}} <br>
                                                 @else
-                                                <form action="/review/submit" method="post">
+                                                <form action="/review/submit" meod="post">
                                                     @csrf
                                                     <input type="hidden" name="proposal_id" value="{{$proposal['id']}}">
                                                     Kriteria 1

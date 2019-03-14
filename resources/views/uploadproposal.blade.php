@@ -88,8 +88,11 @@
                                         <div class="card-button">
                                             <img src="/image/icon-upload.png" alt="" width="120px">
                                         </div>
-                                        <div class="text-upload card-button">
+                                        <div class="text-upload card-button" style="margin-bottom: 0px;">
                                             Upload
+                                        </div>
+                                        <div class="description" style="text-align: center; margin-bottom: 30px;">
+                                            Silakan upload file dalam bentuk pdf 
                                         </div>
                                         <div class="form-group row">
                                             <label for="cabang" class="col-md-4 col-form-label text-md-right" style="display: none;">{{ __('Upload proposal anda') }}</label>

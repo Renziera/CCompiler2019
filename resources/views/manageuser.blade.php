@@ -120,7 +120,7 @@
                                                 <form action="/admin/rejectpeserta" method="post">
                                                     @csrf
                                                     <input type="hidden" name="username" value="{{$user['username']}}">
-                                                    <input type="submit" value="Reject" class="btn btn-outline-danger" style="margin-top: 10px;">
+                                                    <input type="submit" value="Reject" class="btn btn-outline-danger" style="margin-top: 30px; width : 80.98px;">
                                                 </form>
                                                 @endif
                                                 @if($user['status'] == 'Approved')
@@ -129,7 +129,7 @@
                                                 <form action="/admin/approvepeserta" method="post">
                                                     @csrf
                                                     <input type="hidden" name="username" value="{{$user['username']}}">
-                                                    <input type="submit" value="Approve" class="btn btn-outline-success" style="margin-top: 10px;">
+                                                    <input type="submit" value="Approve" class="btn btn-outline-success" style="margin-top: 10px; margin-bottom: 25px;">
                                                 </form>
                                                 @endif
                                                 @else

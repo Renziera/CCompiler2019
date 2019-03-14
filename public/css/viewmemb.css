@@ -47,52 +47,95 @@
     color: #6C36D2;
 }
 
-.navbar-laravel{
+.navbar-laravel {
     background-image: linear-gradient(130deg, #62E7FE, #7D7BF4);
 }
 
-.card{
+.card {
     text-align: center;
     animation: ani 1.5s 1;
     border-radius: 30px;
     margin-top: 60px;
 }
 
-.card-body{
+.card-body {
     overflow-x: scroll;
 }
 
-.foreach div{
+.foreach div {
     display: inline-block;
 }
 
-.card-member div{
+.card-member div {
     display: block;
 }
 
-.card-member{
+.card-member {
     margin-left: 40px;
     margin-right: 40px;
     text-align: left;
     margin-top: 10px;
 }
 
-.card-header{
+.card-header {
     font-family: 'Montserrat';
     font-size: 30px;
     color: #6C36D2;
     font-weight: 700;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: none;
 }
 
-.card-text{
+.header {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 30pt;
+    color: white;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.card-text {
     font-family: 'Nunito';
     font-size: 20px;
 }
 
-.name{
-    font-size: 16px;
+.card-body {
+    padding: 20px;
+}
+
+.row{
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.col-sm-6 {
+    width: 60%;
+}
+
+.name {
+    font-size: 28px;
     padding-bottom: 10px;
     font-weight: 900;
+    background-color: mediumpurple;
+    border-radius: 10px;
+    color: white;
+}
+
+h4 {
+    padding-top: 10px;
+}
+
+th {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 @keyframes ani {
@@ -118,15 +161,20 @@
     .navbar-light .navbar-nav .nav-link:focus {
         color: white;
     }
+
+    th {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
-@media screen and (max-width: 500px){
-    .card-body{
+@media screen and (max-width: 500px) {
+    .card-body {
         padding-left: 0px;
         padding-right: 0px;
     }
-    
-    th{
+
+    th {
         padding-left: 20px;
         padding-right: 20px;
     }
