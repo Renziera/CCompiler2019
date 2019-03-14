@@ -19,7 +19,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="/css/viewmemb.css">
+    <link rel="stylesheet" href="/css/manageuser.css">
+<!--    <link rel="stylesheet" href="/css/viewmemb.css">-->
 </head>
 
 <body>

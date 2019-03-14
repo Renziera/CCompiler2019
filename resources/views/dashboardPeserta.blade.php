@@ -19,7 +19,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="/css/viewmemb.css">
+    <!--    <link rel="stylesheet" href="/css/viewmemb.css">-->
+    <link rel="stylesheet" href="/css/peserta.css">
 </head>
 
 <body>
@@ -106,39 +107,42 @@
                                     <br>
                                     <br>
                                     <div class="container">
-                                       <div class="row">
-                                           <div class="col-sm-6 text-center">
-                                            <div class="name" style="padding-top: 10px;">{{$name}}</div>
-                                            <h4>Nama Tim</h4>
+                                        <div class="row">
+                                            <div class="col-sm-6 text-center">
+                                                <div class="name" style="padding-top: 10px;">{{$name}}</div>
+                                                <h4>Nama Tim</h4>
+                                            </div>
+                                            <div class="col-sm-6 text-center">
+                                                <div class="name" style="padding-top: 10px;">{{$cabang}}</div>
+                                                <h4>Cabang Lomba</h4>
+                                            </div>
                                         </div>
-                                        <div class="col-sm-6 text-center">
-                                            <div class="name" style="padding-top: 10px;">{{$cabang}}</div>
-                                            <h4>Cabang Lomba</h4>
-                                        </div>
-                                       </div>
                                     </div>
-                                    <div class="foreach">
-                                        @foreach($members as $member)
-                                        <div class="card-member">
-                                            <div class="card-name">
-                                                Nama: {{$member->nama}}
-                                            </div>
-                                            <div class="card-nim">
-                                                NIM: {{$member->nim}}
-                                            </div>
-                                            <div class="card-prodi">
-                                                Prodi: {{$member->prodi}}
-                                            </div>
-                                            <div class="card-prodi">
-                                                <a href="{{$member->ktm}}" target="_blank" rel="noopener noreferrer">Lihat KTM</a>
-                                            </div>
-                                        </div>
-                                        @endforeach
-                                    </div>
+
                                 </div>
+
                             </div>
+
                         </div>
                     </div>
+                </div>
+                <div class="foreach text-center " style="margin-top: 20px;">
+                    @foreach($members as $member)
+                    <div class="card-member">
+                        <div class="card-name">
+                            Nama: {{$member->nama}}
+                        </div>
+                        <div class="card-nim">
+                            NIM: {{$member->nim}}
+                        </div>
+                        <div class="card-prodi">
+                            Prodi: {{$member->prodi}}
+                        </div>
+                        <div class="card-button">
+                            <a href="{{$member->ktm}}" target="_blank" rel="noopener noreferrer">Lihat KTM</a>
+                        </div>
+                    </div>
+                    @endforeach
                 </div>
             </main>
         </div>

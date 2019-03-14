@@ -19,7 +19,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="/css/reviewer.css">
+    <link rel="stylesheet" href="/css/admin.css">
 </head>
 
 <body>

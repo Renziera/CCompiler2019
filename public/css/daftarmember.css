@@ -11,3 +11,266 @@
     background-color: white;
     border-radius: 30px;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-cabang::after {
+    background-image: url(/../image/bg-daftarmember.png);
+    content: " ";
+    width: 110%;
+    height: 110%;
+    top: -5%;
+    left: -5%;
+    position: fixed;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar-brand {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.2);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-size: 13pt;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    transform: scale(1.2);
+    color: #6C36D2;
+}
+
+.card-header {
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    color: white;
+    animation: ani 1.5s 1;
+    font-weight: 700;
+}
+
+.card-header2 {
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    color: white;
+    animation: ani 1.5s 1;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.card {
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px -2px #000000;
+    animation: ani 1.5s 1;
+    width: auto;
+    display: inline-block;
+}
+
+/*.pilih-lomba .inside div {
+    display: inline-block;
+}
+
+.pilih-lomba {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}*/
+
+.card-body {
+    padding-top: 5%;
+    width: 100%;
+    align-content: center;
+}
+
+.all-lomba {
+    text-align: center;
+    width: 100%;
+}
+
+.logo img{
+    margin-top: 10px;
+}
+
+.custom-control{
+    padding-left: 3.5rem;
+    padding-right: 2rem;
+    display: inline-block;
+    border-bottom: 1pt solid steelblue;
+    padding-top: 5px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+
+.custom-control-label{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: steelblue;
+    font-size: 12pt;
+    text-align: left;
+}
+
+.input-lomba {
+    margin-right: 15px;
+}
+
+.inside {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: left;
+}
+
+.logo img {
+    margin-top: 25px;
+    margin-right: 15px;
+}
+
+.nama-lomba {
+    font-family: 'Nunito';
+    font-size: 16px;
+}
+
+.btn.btn-primary {
+    border-radius: 30px;
+    width: 150px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12pt;
+    border: none;
+    text-align: center;
+    background-image: linear-gradient(135deg, #73A3F8, #63E4FE);
+    letter-spacing: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    line-height: 30px;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    position: relative;
+    margin-top: 20px;
+}
+
+.btn.btn-primary:hover {
+    opacity: 0.8;
+}
+
+.card-button {
+    text-align: center;
+    margin-left: 0;
+}
+
+.anggota {
+    text-align: center;
+    width: 150px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border-radius: 25px;
+    background-image: linear-gradient(130deg, #AB47BC, #E1BEE7);
+    margin-bottom: 25px;
+}
+
+.label-anggota {
+    color: white;
+}
+
+label {
+    margin-bottom: 0;
+    color: #6C36D2;
+    font-weight: 900;
+}
+
+.last {
+    margin-bottom: 30px;
+}
+
+.form-control {
+    border-color: grey;
+}
+
+.upload {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+
+}
+
+input#proposal {
+    width: 290px;
+    color: red;
+    width: 185px;
+    margin-bottom: 20px;
+}
+
+input[type="file"i] {
+    -webkit-appearance: initial;
+    background-color: initial;
+    cursor: default;
+    padding: initial;
+    border: initial;
+}
+
+.text-upload {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    color: black;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.01;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-light .navbar-nav .nav-link:hover {
+        transform: scale(1);
+        color: #6C36D2;
+    }
+
+    .navbar-light .navbar-nav .nav-link:focus {
+        color: white;
+    }
+}
