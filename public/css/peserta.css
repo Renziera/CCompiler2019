@@ -195,6 +195,30 @@ th {
     margin-bottom: 20px;
 }
 
+.btn.btn-primary {
+    border-radius: 30px;
+    width: auto;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12pt;
+    border: none;
+    text-align: center;
+    background-image: linear-gradient(135deg, #73A3F8, #63E4FE);
+    letter-spacing: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    line-height: 30px;
+    justify-content: center;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.btn.btn-primary:hover {
+    opacity: 0.8;
+}
+
 @keyframes ani {
     0% {
         opacity: 0;

@@ -96,11 +96,13 @@
                                     <br>
                                     Proposal sudah terupload dan dalam proses.
                                     @else
+                                    <br>
+                                    <br>
                                     @if($cabang == 'cp')
-                                    <button>Masuk Platform Mooshak</button>
+                                    <button class="btn btn-primary">Masuk Platform Mooshak</button>
                                     @endif
                                     @if($cabang == 'ctf')
-                                    <button>Masuk Platform AsGama</button>
+                                    <button class="btn btn-primary">Masuk Platform AsGama</button>
                                     @endif
                                     @endif
                                     @endif
