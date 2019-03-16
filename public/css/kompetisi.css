@@ -18,7 +18,7 @@
 }
 
  .nav-link{
-    color: white;
+    color: white !important;
     font-size: 13pt;
     font-family: 'Montserrat';
     font-weight: 900;
@@ -88,6 +88,10 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     padding-top: 10px;
+}
+
+.card-header{
+    background-color: white !important;
 }
 
 .desc-kompetisi {
@@ -204,5 +208,35 @@
 
     .navbar-light .navbar-nav .nav-link:focus {
         color: white;
+    }
+}
+
+@media screen and (max-width: 448px){
+    .desc2-kompetisi{
+        text-align: center;
+    }
+    
+    .contact-person{
+        margin-left: 0;
+    }
+    
+    .prize, .contact-person{
+        width: auto;
+    }
+    
+    .desc-contact{
+        text-align: center;
+    }
+    
+    .contact-person div{
+        text-align: center;
+    }
+    
+    .prize, .title-prize{
+        text-align: center;
+    }
+    
+    td, th{
+        text-align: center;
     }
 }
