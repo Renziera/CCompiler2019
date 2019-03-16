@@ -109,7 +109,7 @@
         @endif
     </div>
 -->
-    <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+    <nav class="navbar navbar-expand-md navbar-light navbar-laravel fixed-top">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
                 <img src="/image/ccomp%20hd-white.png" alt="" width="100px">
