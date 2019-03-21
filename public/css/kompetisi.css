@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Nunito');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
 *{
     margin: 0;
@@ -54,9 +55,9 @@
     margin-top: 0px;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 20px;
+    padding-left: 40px;
     animation: ani 1.5s 1;
-    padding-right: 20px;
+    padding-right: 40px;
 }
 
 .card-kompetisi {

@@ -109,7 +109,7 @@
         @endif
     </div>
 -->
-    <nav class="navbar navbar-expand-md navbar-light navbar-laravel fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
                 <img src="/image/ccomp%20hd-white.png" alt="" width="100px">
@@ -123,6 +123,19 @@
 
                 </ul>
                 <ul class="navbar-nav ml-auto">
+                    <!-- <div class="dropdown" style="padding-right: 50px;">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Lomba
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">CP</a>
+                            <a class="dropdown-item" href="#">CTF</a>
+                            <a class="dropdown-item" href="#">PPL</a>
+                        </div>
+                    </div>-->
+                    <li class="nav-item">
+                        <a href="/#lomba" class="nav-link" style="color: #F9FBFC;">Lomba</a>
+                    </li>
                     @auth
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/home') }}" style="color: #F9FBFC;">Beranda</a>
@@ -178,7 +191,7 @@
     <!--    header end-->
 
     <!--    lomba start-->
-    <section class="lomba">
+    <section class="lomba" id="lomba">
         <div class="lomba-title">
             LOMBA
         </div>
