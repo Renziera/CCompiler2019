@@ -43,6 +43,32 @@
     background-image: linear-gradient(130deg, #62E7FE, #7D7BF4);
 }
 
+.btn-primary2{
+    border: none !important;
+    background-color: transparent !important;
+    padding: .5rem .1rem !important;
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+    font-size: 13pt;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    vertical-align: middle;
+}
+
+.btn2{
+    font-size: 13pt !important;
+    font-weight: 700 !important;
+    font-family: 'Montserrat' !important;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
 .bg-review::after {
     background-image: url(../image/bg-daftarmember.svg);
     content: " ";
@@ -140,6 +166,10 @@ input[type=submit]:hover{
 
     .navbar-light .navbar-nav .nav-link:focus {
         color: white;
+    }
+    
+    .btn-primary2{
+        padding-left: 0 !important;
     }
 }
 

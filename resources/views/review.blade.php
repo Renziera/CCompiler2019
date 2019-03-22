@@ -41,6 +41,21 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn2 btn-primary2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a href="#lomba" style="text-decoration: none; color: #F9FBFC;">Lomba</a>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="{{ url('/kompetisi/cp') }}">Competitive Programming</a>
+                                    <a class="dropdown-item" href="{{ url('/kompetisi/ctf') }}">Capture The Flag</a>
+                                    <a class="dropdown-item" href="{{ url('/kompetisi/ppl') }}">Pengembangan Perangkat Lunak</a>
+                                    <a href="{{ url('/kompetisi/iot') }}" class="dropdown-item">Internet of Things</a>
+                                    <a href="{{ url('/kompetisi/ux') }}" class="dropdown-item">User eXperience</a>
+                                </div>
+                            </div>
+                        </li>
+
                         <!-- Authentication Links -->
                         @guest
                         <li class="nav-item">
@@ -53,8 +68,8 @@
                         @endif
                         @else
                         <li class="nav-item">
-                                <a class="nav-link" href="{{ route('home') }}">{{ __('Beranda') }}</a>
-                            </li>
+                            <a class="nav-link" href="{{ route('home') }}">{{ __('Beranda') }}</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }} <span class="caret"></span>
@@ -82,9 +97,9 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-8">
-                           <div class="card-header">
-                           <h1>Review Proposal</h1>
-                           </div>
+                            <div class="card-header">
+                                <h1>Review Proposal</h1>
+                            </div>
                             <div class="card">
                                 <div class="card-body">
                                     <table width="100%">
@@ -93,7 +108,7 @@
                                             <th>Cabang</th>
                                             <th>Proposal</th>
                                             <th>Status</th>
-                                            <th  class="penilaian">Penilaian</th>
+                                            <th class="penilaian">Penilaian</th>
                                         </tr>
                                         @foreach($data as $proposal)
                                         <tr>

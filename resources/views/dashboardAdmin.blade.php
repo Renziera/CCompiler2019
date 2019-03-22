@@ -42,6 +42,21 @@
 
                         <!-- Right Side Of Navbar -->
                         <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn2 btn-primary2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a href="#lomba" style="text-decoration: none; color: #F9FBFC;">Lomba</a>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="{{ url('/kompetisi/cp') }}">Competitive Programming</a>
+                                        <a class="dropdown-item" href="{{ url('/kompetisi/ctf') }}">Capture The Flag</a>
+                                        <a class="dropdown-item" href="{{ url('/kompetisi/ppl') }}">Pengembangan Perangkat Lunak</a>
+                                        <a href="{{ url('/kompetisi/iot') }}" class="dropdown-item">Internet of Things</a>
+                                        <a href="{{ url('/kompetisi/ux') }}" class="dropdown-item">User eXperience</a>
+                                    </div>
+                                </div>
+                            </li>
+
                             <!-- Authentication Links -->
                             @guest
                             <li class="nav-item">
@@ -83,23 +98,23 @@
                 <div class="container">
                     <div class="card-body">
                         <div class="card-proposal">
-                           <div class="card-img">
-                               <img src="/image/icon-sudah.png" alt="" width="100px">
-                           </div>
-                           <div class="card-text">
-                               Manage<br>User
-                           </div>
+                            <div class="card-img">
+                                <img src="/image/icon-sudah.png" alt="" width="100px">
+                            </div>
+                            <div class="card-text">
+                                Manage<br>User
+                            </div>
                             <div class="card-button">
                                 <a href="/admin/manage">Click Here</a>
                             </div>
                         </div>
                         <div class="card-proposal">
-                           <div class="card-img">
-                               <img src="/image/icon-all.png" alt="" width="100px">
-                           </div>
-                           <div class="card-text">
-                               Lihat<br>Proposal
-                           </div>
+                            <div class="card-img">
+                                <img src="/image/icon-all.png" alt="" width="100px">
+                            </div>
+                            <div class="card-text">
+                                Lihat<br>Proposal
+                            </div>
                             <div class="card-button">
                                 <a href="/admin/proposal">Click Here</a>
                             </div>

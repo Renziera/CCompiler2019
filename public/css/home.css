@@ -15,8 +15,6 @@
     -o-transition: all 0.3s ease-in-out;
 }
 
-
-
 .row{
     padding-top: 200px;
     padding-bottom: 150px;
@@ -54,9 +52,30 @@
     top: 10px;
 }
 
-.btn-primary{
-    background-color: transparent;
-    border-color: transparent;
+.btn-primary2{
+    border: none !important;
+    background-color: transparent !important;
+    padding: .5rem .1rem !important;
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+    font-size: 13pt;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    vertical-align: middle;
+}
+
+.btn2{
+    font-size: 13pt !important;
+    font-weight: 700 !important;
+    font-family: 'Montserrat' !important;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
 }
 
 .welcome {
@@ -262,6 +281,7 @@ header .header-kiri div {
 .button a:hover {
     opacity: 0.8;
     text-decoration: none;
+    color: white;
 }
 
 .card-gallery img {
@@ -536,5 +556,9 @@ footer .copyright {
     
     .description{
         text-align: justify;
+    }
+    
+    .btn-primary2{
+        padding-left: 0 !important;
     }
 }

@@ -38,6 +38,32 @@
     color: #6C36D2;
 }
 
+.btn-primary2{
+    border: none !important;
+    background-color: transparent !important;
+    padding: .5rem .1rem !important;
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+    font-size: 13pt;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    vertical-align: middle;
+}
+
+.btn2{
+    font-size: 13pt !important;
+    font-weight: 700 !important;
+    font-family: 'Montserrat' !important;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
 .bg-lomba::after {
     content: " ";
     position: fixed;
@@ -183,8 +209,35 @@
     -o-transition-timing-function: ease-in-out;
 }
 
+.btn.btn-primary {
+    border-radius: 30px;
+    width: 150px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12pt;
+    border: none;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(135deg, #73A3F8, #63E4FE);
+    letter-spacing: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    line-height: 30px;
+    justify-content: center;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.btn.btn-primary:hover {
+    opacity: 0.8;
+    color: white;
+}
+
 .download-book a:hover {
     color: #6C36D2;
+    color: white;
 }
 
 @keyframes ani {
@@ -209,6 +262,10 @@
 
     .navbar-light .navbar-nav .nav-link:focus {
         color: white;
+    }
+    
+    .btn-primary2{
+        padding-left: 0 !important;
     }
 }
 

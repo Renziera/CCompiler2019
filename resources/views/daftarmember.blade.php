@@ -19,7 +19,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-<!--    <link rel="stylesheet" href="/css/cabang.css">-->
+    <!--    <link rel="stylesheet" href="/css/cabang.css">-->
     <link rel="stylesheet" href="/css/daftarmember.css">
 </head>
 
@@ -43,6 +43,21 @@
 
                         <!-- Right Side Of Navbar -->
                         <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn2 btn-primary2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a href="#lomba" style="text-decoration: none; color: #F9FBFC;">Lomba</a>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="{{ url('/kompetisi/cp') }}">Competitive Programming</a>
+                                        <a class="dropdown-item" href="{{ url('/kompetisi/ctf') }}">Capture The Flag</a>
+                                        <a class="dropdown-item" href="{{ url('/kompetisi/ppl') }}">Pengembangan Perangkat Lunak</a>
+                                        <a href="{{ url('/kompetisi/iot') }}" class="dropdown-item">Internet of Things</a>
+                                        <a href="{{ url('/kompetisi/ux') }}" class="dropdown-item">User eXperience</a>
+                                    </div>
+                                </div>
+                            </li>
+
                             <!-- Authentication Links -->
                             @guest
                             <li class="nav-item">
@@ -81,135 +96,135 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-8">
-                           <div class="card-header2">Yuk, Daftarin Anggotamu!</div>
-                            
-                                <div class="card-body">
-                                    @if(isset($pesan))
-                                        {{ $pesan }}
-                                        <br>
-                                        <br>
-                                    @endif
-                                    <form method="POST" action="/peserta/member" enctype="multipart/form-data">
-                                        @csrf
+                            <div class="card-header2">Yuk, Daftarin Anggotamu!</div>
 
-                                        <div class="anggota">
-                                            <label for="member" class="label-anggota">{{ __('Anggota 1') }}</label>
+                            <div class="card-body">
+                                @if(isset($pesan))
+                                {{ $pesan }}
+                                <br>
+                                <br>
+                                @endif
+                                <form method="POST" action="/peserta/member" enctype="multipart/form-data">
+                                    @csrf
+
+                                    <div class="anggota">
+                                        <label for="member" class="label-anggota">{{ __('Anggota 1') }}</label>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="nama" class="col-md-4 col-form-label text-md-right">{{ __('Nama') }}</label>
+
+                                        <div class="col-md-6">
+                                            <input id="nama" type="text" class="form-control" name="nama1" required autofocus>
                                         </div>
+                                    </div>
 
-                                        <div class="form-group row">
-                                            <label for="nama" class="col-md-4 col-form-label text-md-right">{{ __('Nama') }}</label>
+                                    <div class="form-group row">
+                                        <label for="nim" class="col-md-4 col-form-label text-md-right">{{ __('NIM') }}</label>
 
-                                            <div class="col-md-6">
-                                                <input id="nama" type="text" class="form-control" name="nama1" required autofocus>
-                                            </div>
+                                        <div class="col-md-6">
+                                            <input id="nim" type="text" class="form-control" name="nim1" required>
                                         </div>
+                                    </div>
 
-                                        <div class="form-group row">
-                                            <label for="nim" class="col-md-4 col-form-label text-md-right">{{ __('NIM') }}</label>
+                                    <div class="form-group row">
+                                        <label for="prodi" class="col-md-4 col-form-label text-md-right">{{ __('Prodi') }}</label>
 
-                                            <div class="col-md-6">
-                                                <input id="nim" type="text" class="form-control" name="nim1" required>
-                                            </div>
+                                        <div class="col-md-6">
+                                            <input id="prodi" type="text" class="form-control" name="prodi1" required>
                                         </div>
+                                    </div>
 
-                                        <div class="form-group row">
-                                            <label for="prodi" class="col-md-4 col-form-label text-md-right">{{ __('Prodi') }}</label>
+                                    <div class="form-group row last">
+                                        <label for="prodi" class="col-md-4 col-form-label text-md-right">{{ __('KTM') }}</label>
 
-                                            <div class="col-md-6">
-                                                <input id="prodi" type="text" class="form-control" name="prodi1" required>
-                                            </div>
+                                        <div class="col-md-6">
+                                            <input id="prodi" type="file" accept="image/*" class="form-control" name="ktm1" required>
                                         </div>
+                                    </div>
 
-                                        <div class="form-group row last">
-                                            <label for="prodi" class="col-md-4 col-form-label text-md-right">{{ __('KTM') }}</label>
+                                    <div class="anggota">
+                                        <label for="member" class="label-anggota">{{ __('Anggota 2') }}</label>
+                                    </div>
 
-                                            <div class="col-md-6">
-                                                <input id="prodi" type="file" accept="image/*" class="form-control" name="ktm1" required>
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="nama" class="col-md-4 col-form-label text-md-right">{{ __('Nama') }}</label>
+
+                                        <div class="col-md-6">
+                                            <input id="nama" type="text" class="form-control" name="nama2" required>
                                         </div>
+                                    </div>
 
-                                        <div class="anggota">
-                                            <label for="member" class="label-anggota">{{ __('Anggota 2') }}</label>
+                                    <div class="form-group row">
+                                        <label for="nim" class="col-md-4 col-form-label text-md-right">{{ __('NIM') }}</label>
+
+                                        <div class="col-md-6">
+                                            <input id="nim" type="text" class="form-control" name="nim2" required>
                                         </div>
+                                    </div>
 
-                                        <div class="form-group row">
-                                            <label for="nama" class="col-md-4 col-form-label text-md-right">{{ __('Nama') }}</label>
+                                    <div class="form-group row">
+                                        <label for="prodi" class="col-md-4 col-form-label text-md-right">{{ __('Prodi') }}</label>
 
-                                            <div class="col-md-6">
-                                                <input id="nama" type="text" class="form-control" name="nama2" required>
-                                            </div>
+                                        <div class="col-md-6">
+                                            <input id="prodi" type="text" class="form-control" name="prodi2" required>
                                         </div>
+                                    </div>
 
-                                        <div class="form-group row">
-                                            <label for="nim" class="col-md-4 col-form-label text-md-right">{{ __('NIM') }}</label>
+                                    <div class="form-group row last">
+                                        <label for="prodi" class="col-md-4 col-form-label text-md-right">{{ __('KTM') }}</label>
 
-                                            <div class="col-md-6">
-                                                <input id="nim" type="text" class="form-control" name="nim2" required>
-                                            </div>
+                                        <div class="col-md-6">
+                                            <input id="prodi" type="file" accept="image/*" class="form-control" name="ktm2" required>
                                         </div>
+                                    </div>
 
-                                        <div class="form-group row">
-                                            <label for="prodi" class="col-md-4 col-form-label text-md-right">{{ __('Prodi') }}</label>
+                                    <div class="anggota">
+                                        <label for="member" class="label-anggota">{{ __('Anggota 3') }}</label>
+                                    </div>
 
-                                            <div class="col-md-6">
-                                                <input id="prodi" type="text" class="form-control" name="prodi2" required>
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="nama" class="col-md-4 col-form-label text-md-right">{{ __('Nama') }}</label>
+
+                                        <div class="col-md-6">
+                                            <input id="nama" type="text" class="form-control" name="nama3" required>
                                         </div>
+                                    </div>
 
-                                        <div class="form-group row last">
-                                            <label for="prodi" class="col-md-4 col-form-label text-md-right">{{ __('KTM') }}</label>
+                                    <div class="form-group row">
+                                        <label for="nim" class="col-md-4 col-form-label text-md-right">{{ __('NIM') }}</label>
 
-                                            <div class="col-md-6">
-                                                <input id="prodi" type="file" accept="image/*" class="form-control" name="ktm2" required>
-                                            </div>
+                                        <div class="col-md-6">
+                                            <input id="nim" type="text" class="form-control" name="nim3" required>
                                         </div>
+                                    </div>
 
-                                        <div class="anggota">
-                                            <label for="member" class="label-anggota">{{ __('Anggota 3') }}</label>
+                                    <div class="form-group row">
+                                        <label for="prodi" class="col-md-4 col-form-label text-md-right">{{ __('Prodi') }}</label>
+
+                                        <div class="col-md-6">
+                                            <input id="prodi" type="text" class="form-control" name="prodi3" required>
                                         </div>
+                                    </div>
 
-                                        <div class="form-group row">
-                                            <label for="nama" class="col-md-4 col-form-label text-md-right">{{ __('Nama') }}</label>
+                                    <div class="form-group row last">
+                                        <label for="prodi" class="col-md-4 col-form-label text-md-right">{{ __('KTM') }}</label>
 
-                                            <div class="col-md-6">
-                                                <input id="nama" type="text" class="form-control" name="nama3" required>
-                                            </div>
+                                        <div class="col-md-6">
+                                            <input id="prodi" type="file" accept="image/*" class="form-control" name="ktm3" required>
                                         </div>
+                                    </div>
 
-                                        <div class="form-group row">
-                                            <label for="nim" class="col-md-4 col-form-label text-md-right">{{ __('NIM') }}</label>
-
-                                            <div class="col-md-6">
-                                                <input id="nim" type="text" class="form-control" name="nim3" required>
-                                            </div>
+                                    <div class="">
+                                        <div class="card-button">
+                                            <button type="submit" class="btn btn-primary">
+                                                {{ __('Submit') }}
+                                            </button>
                                         </div>
+                                    </div>
+                                </form>
+                            </div>
 
-                                        <div class="form-group row">
-                                            <label for="prodi" class="col-md-4 col-form-label text-md-right">{{ __('Prodi') }}</label>
-
-                                            <div class="col-md-6">
-                                                <input id="prodi" type="text" class="form-control" name="prodi3" required>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row last">
-                                            <label for="prodi" class="col-md-4 col-form-label text-md-right">{{ __('KTM') }}</label>
-
-                                            <div class="col-md-6">
-                                                <input id="prodi" type="file" accept="image/*" class="form-control" name="ktm3" required>
-                                            </div>
-                                        </div>
-
-                                        <div class="">
-                                            <div class="card-button">
-                                                <button type="submit" class="btn btn-primary">
-                                                    {{ __('Submit') }}
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            
                         </div>
                     </div>
                 </div>

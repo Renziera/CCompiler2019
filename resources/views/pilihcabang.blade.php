@@ -42,6 +42,21 @@
 
                         <!-- Right Side Of Navbar -->
                         <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn2 btn-primary2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a href="#lomba" style="text-decoration: none; color: #F9FBFC;">Lomba</a>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="{{ url('/kompetisi/cp') }}">Competitive Programming</a>
+                                        <a class="dropdown-item" href="{{ url('/kompetisi/ctf') }}">Capture The Flag</a>
+                                        <a class="dropdown-item" href="{{ url('/kompetisi/ppl') }}">Pengembangan Perangkat Lunak</a>
+                                        <a href="{{ url('/kompetisi/iot') }}" class="dropdown-item">Internet of Things</a>
+                                        <a href="{{ url('/kompetisi/ux') }}" class="dropdown-item">User eXperience</a>
+                                    </div>
+                                </div>
+                            </li>
+
                             <!-- Authentication Links -->
                             @guest
                             <li class="nav-item">
@@ -96,7 +111,7 @@
                                                     <input type="radio" id="cp" name="cabang" class="custom-control-input" value="cp" required>
                                                     <label class="custom-control-label" for="cp">Competitive <br> Programming</label>
                                                 </div>
-                                                
+
                                                 <div class="custom-control custom-radio">
                                                     <div class="logo">
                                                         <img src="/image/icon-ctf.png" alt="" width="70px">
@@ -105,14 +120,14 @@
                                                     <label class="custom-control-label" for="ctf">Capture <br> the Flag</label>
                                                 </div>
 
-                                               <div class="custom-control custom-radio">
+                                                <div class="custom-control custom-radio">
                                                     <div class="logo">
                                                         <img src="/image/icon-ppl.png" alt="" width="70px">
                                                     </div>
                                                     <input type="radio" id="ppl" name="cabang" class="custom-control-input" value="ppl" required>
                                                     <label class="custom-control-label" for="ppl">Pengembangan <br> Perangkat Lunak</label>
                                                 </div>
-                                               
+
                                                 <div class="custom-control custom-radio">
                                                     <div class="logo">
                                                         <img src="/image/icon-iot.png" alt="" width="70px">
