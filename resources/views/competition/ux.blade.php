@@ -107,7 +107,7 @@
                                             User eXperience
                                         </div>
                                         <div class="desc-kompetisi">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam fuga numquam minus ab aliquid cumque iste suscipit veritatis id eos! Lorem
+                                            User Experience merupakan lomba desain interaksi produk yang berorientasi pada kenyamanan dan kemudahan bagi pengguna. Para peserta lomba dituntut agar dapat merancang suatu antarmuka pengguna yang baik dengan menggunakan metode yang sesuai, sehingga didapatkan hasil desain aplikasi yang memiliki kualitas UX yang baik.
                                         </div>
                                     </div>
                                 </div>

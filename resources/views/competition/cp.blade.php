@@ -107,7 +107,7 @@
                                             Competitive Programming
                                         </div>
                                         <div class="desc-kompetisi">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam fuga numquam minus ab aliquid cumque iste suscipit veritatis id eos! Lorem
+                                            Competitive Programming bertujuan untuk menguji kemampuan dan nalar dari setiap peserta dalam menyelesaikan program komputer untuk memecahkan permasalahan yang diberikan. Peserta ditantang untuk menyelesaikan banyak permasalahan yang diberikan dengan algoritma yang tepat dalam kurun waktu yang telah ditetapkan.
                                         </div>
                                     </div>
                                 </div>

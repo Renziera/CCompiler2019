@@ -199,7 +199,7 @@
                             C-COMPILER<br>2019
                         </div>
                         <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius molestiae, eligendi obcaecati vitae temporibus illo natus corporis suscipit aliquam, nihil dolores, iure inventore deleniti ullam harum consequuntur amet, cupiditate cum officia maxime numquam. At, molestias, quia voluptatibus odio fugit officiis.
+                            CCompiler merupakan perlombaan bidang Teknologi Informasi dan Komunikasi yang diselenggarakan oleh KOMATIK UGM. Perlombaan ini ditujukan untuk mempersiapkan mahasiswa UGM dalam mengikuti GEMASTIK. Selain itu juga dengan harapan agar mahasiswa mampu berkarya dan menyalurkan semangat inovasinya di dalam pengembangan TIK .
                         </div>
                     </div>
                 </div>

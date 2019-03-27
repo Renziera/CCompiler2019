@@ -107,7 +107,7 @@
                                             Pengembangan Perangkat Lunak
                                         </div>
                                         <div class="desc-kompetisi">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam fuga numquam minus ab aliquid cumque iste suscipit veritatis id eos! Lorem
+                                            Pengembangan Perangkat Lunak bertujuan untuk menguji kemampuan peserta dalam mengembangkan ide kreatif untuk memberikan solusi penyelesaian masalah  dalam bentuk perangkat lunak berkualitas tinggi. Produk perangkat lunak yang dihasilkan harus bisa dioperasikan sehingga dampaknya dapat terukur.
                                         </div>
                                     </div>
                                 </div>

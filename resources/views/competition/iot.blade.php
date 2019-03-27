@@ -107,7 +107,7 @@
                                             Internet of Things
                                         </div>
                                         <div class="desc-kompetisi">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam fuga numquam minus ab aliquid cumque iste suscipit veritatis id eos! Lorem
+                                            Internet of Thing bertujuan untuk menguji kemampuan peserta dalam membangun suatu perangkat yang dilengkapi dengan antarmuka yang baik dan penggunaan sensor sebagai input dari keadaan lingkungan, piranti cerdas dapat bekerja secara efisien dan memberikan manfaat yang besar bagi lingkungan dan masyarakat.
                                         </div>
                                     </div>
                                 </div>

@@ -107,7 +107,7 @@
                                             Capture the Flag
                                         </div>
                                         <div class="desc-kompetisi">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam fuga numquam minus ab aliquid cumque iste suscipit veritatis id eos! Lorem
+                                            Capture The Flag bertujuan untuk menguji kemampuan peserta dalam menghadapi kasus keamanan sistem komputer dan jaringan. Peserta akan dihadapkan dengan sejumlah skenario keamanan dan mencari data khusus (flag) yang bisa didapat dengan mengeksploitasi celah sistem atau mencari informasi penting yang terkait dengan keamanan data yang disiapkan.
                                         </div>
                                     </div>
                                 </div>
