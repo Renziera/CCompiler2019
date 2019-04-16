@@ -7,6 +7,9 @@
 
     <title>CCompiler</title>
 
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="/image/favicon.png">
+    
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
