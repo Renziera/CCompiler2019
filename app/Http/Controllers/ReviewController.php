@@ -67,8 +67,8 @@ class ReviewController extends Controller
             return redirect('/illegal');
         }
         $reviewerId = Auth::id();
-
-        $proposals = Proposal::All();
+        $cabang = Auth::user()->cabang;
+        $proposals = Proposal::where('cabang', $cabang)->get();
         $data = array();
         foreach($proposals as $proposal){
             $data[$proposal->id]['nama'] = $proposal->user->name;
@@ -97,7 +97,8 @@ class ReviewController extends Controller
         }
         $reviewerId = Auth::id();
 
-        $proposals = Proposal::All();
+        $cabang = Auth::user()->cabang;
+        $proposals = Proposal::where('cabang', $cabang)->get();
         $data = array();
         foreach($proposals as $proposal){
             if($proposal->reviews->where('user_id', $reviewerId)->count() === 0){

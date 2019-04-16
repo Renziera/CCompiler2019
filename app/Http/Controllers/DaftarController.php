@@ -70,7 +70,10 @@ class DaftarController extends Controller
         
         $id = Auth::id();
         $cabang = User::find($id)->cabang;
-        $proposal = new Proposal;
+        $proposal = Proposal::where('user_id', $id)->first();
+        if(!$proposal){
+            $proposal = new Proposal;
+        }
         $proposal->user_id = $id;
         $proposal->cabang = $cabang;
         $proposal->filename = $publicPath;

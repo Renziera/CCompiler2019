@@ -129,14 +129,46 @@
                                                 <h4>Nama Tim</h4>
                                             </div>
                                             <div class="col-sm-6 text-center">
-                                                <div class="name" style="padding-top: 10px;">{{$cabang}}</div>
+                                                <div class="name" style="padding-top: 10px;">
+                                                @if($cabang == 'cp')
+                                                Competitive Programming
+                                                @elseif($cabang == 'ctf')
+                                                Capture The Flag
+                                                @elseif($cabang == 'ppl')
+                                                Pengembangan Perangkat Lunak
+                                                @elseif($cabang == 'iot')
+                                                Internet of Things
+                                                @elseif($cabang == 'ux')
+                                                User eXperience
+                                                @endif
+                                                </div>
                                                 <h4>Cabang Lomba</h4>
                                             </div>
                                         </div>
                                     </div>
 
                                 </div>
-
+                                @if(!$adaProposal)
+                                @if($sudahWaktu)
+                                LOGIN KE PLATFORM
+                                @else
+                                Silahkan tunggu waktu mulai
+                                @endif
+                                @else
+                                <br>
+                                <a href="{{$proposal}}" target="_blank" rel="noopener noreferrer">Lihat proposal</a>
+                                <br>
+                                @if(!$sudahWaktu)
+                                Upload ulang proposal
+                                <br>
+                                <form method="POST" action="/peserta/proposal" enctype="multipart/form-data">
+                                    @csrf
+                                    <input type="file" name="proposal" id="proposal" accept=".pdf">
+                                    <input type="submit" value="Upload Ulang">
+                                </form>
+                                <br>
+                                @endif
+                                @endif
                             </div>
 
                         </div>

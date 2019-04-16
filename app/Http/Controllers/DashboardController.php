@@ -55,11 +55,18 @@ class DashboardController extends Controller
             }
             if($cabang == 'cp' || $cabang == 'ctf'){
                 $adaProposal = false;
+                $proposal = 'illegal';
             }else{
                 $adaProposal = true;
+                $proposal = $proposal->filename;
             }
-            return view('dashboardPeserta')->with('members', $members)
-                ->with('adaProposal', $adaProposal)->with('pending', false)->with('cabang', $cabang)->with('name', User::find($id)->name);
+            return view('dashboardPeserta')
+                ->with('members', $members)
+                ->with('adaProposal', $adaProposal)
+                ->with('pending', false)->with('cabang', $cabang)
+                ->with('name', User::find($id)->name)
+                ->with('proposal', $proposal)
+                ->with('sudahWaktu', false);
         }
 
         if($role < 4){
