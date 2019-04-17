@@ -47,8 +47,13 @@ class DashboardController extends Controller
             }
             $members = Member::where('user_id', $id)->get();
             if($role < 2){
-                return view('dashboardPeserta')->with('members', $members)
-                    ->with('adaProposal', false)->with('pending', true)->with('cabang', $cabang)->with('name', User::find($id)->name);
+                return view('dashboardPeserta')
+                    ->with('members', $members)
+                    ->with('adaProposal', false)
+                    ->with('pending', true)
+                    ->with('cabang', $cabang)
+                    ->with('name', User::find($id)->name)
+                    ->with('sudahWaktu', false);
             }
             if(!$proposal && $cabang != 'cp' && $cabang != 'ctf'){
                 return view('uploadproposal');
@@ -63,7 +68,8 @@ class DashboardController extends Controller
             return view('dashboardPeserta')
                 ->with('members', $members)
                 ->with('adaProposal', $adaProposal)
-                ->with('pending', false)->with('cabang', $cabang)
+                ->with('pending', false)
+                ->with('cabang', $cabang)
                 ->with('name', User::find($id)->name)
                 ->with('proposal', $proposal)
                 ->with('sudahWaktu', false);
