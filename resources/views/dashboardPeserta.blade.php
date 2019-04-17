@@ -148,6 +148,7 @@
                                     </div>
 
                                 </div>
+                                @if(!$pending)
                                 @if(!$adaProposal)
                                 <br>
                                 @if($sudahWaktu)
@@ -174,6 +175,7 @@
                                     <input type="submit" value="Upload Ulang">
                                 </form>
                                 <br>
+                                @endif
                                 @endif
                                 @endif
                             </div>
