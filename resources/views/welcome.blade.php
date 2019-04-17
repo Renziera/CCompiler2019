@@ -9,7 +9,7 @@
 
     <!--Favicon-->
     <link rel="icon" type="image/png" href="/image/favicon.png">
-    
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
     <!-- Script-->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -182,47 +183,42 @@
         </div>
     </nav>
 
-
-    <!--
-    <div class="nav-logo">
-        <a href="#"><img src="/image/ccomp%20hd-white.png" alt="" width="100px"></a>
-    </div>
--->
-
-    <!--    header start-->
     <header>
         <div class="welcome">
             WELCOME
         </div>
-        <div class="container">
-            <div class="row" style="text-align: left;">
-                <div class="col-md-6">
-                    <div class="header-kiri">
-                        <div class="title">
-                            C-COMPILER<br>2019
-                        </div>
-                        <div class="description">
-                            CCompiler merupakan perlombaan bidang Teknologi Informasi dan Komunikasi yang diselenggarakan oleh KOMATIK UGM. Perlombaan ini ditujukan untuk mempersiapkan mahasiswa UGM dalam mengikuti GEMASTIK. Selain itu juga dengan harapan agar mahasiswa mampu berkarya dan menyalurkan semangat inovasinya di dalam pengembangan TIK .
+        <div class="parallax">
+            <div class="container">
+                <div class="row welcome-row" style="text-align: left;">
+                    <div class="col-md-6">
+                        <div class="header-kiri">
+                            <div class="title">
+                                C-COMPILER<br>2019
+                            </div>
+                            <div class="description">
+                                CCompiler merupakan perlombaan bidang Teknologi Informasi dan Komunikasi yang diselenggarakan oleh KOMATIK UGM. Perlombaan ini ditujukan untuk mempersiapkan mahasiswa UGM dalam mengikuti GEMASTIK. Selain itu juga dengan harapan agar mahasiswa mampu berkarya dan menyalurkan semangat inovasinya di dalam pengembangan TIK .
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="header-kanan">
-                        <img src="/image/ilus-welcome.png" alt="" width="90%">
+                    <div class="col-md-6">
+                        <div class="header-kanan">
+                            <img src="/image/ilus-welcome.png" alt="" width="90%">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </header>
     <!--    header end-->
 
     <!--    lomba start-->
     <section class="lomba" id="lomba">
-        <div class="lomba-title">
+        <div class="lomba-title wow fadeInUp">
             LOMBA
         </div>
         <div class="card">
-            <div class="card-lomba">
+            <div class="card-lomba wow fadeInUp">
 
                 <div class="card-img">
                     <img src="/image/icon-cp.png" alt="" width="90px">
@@ -230,11 +226,11 @@
                 <div class="card-name">
                     Competitive<br>Programming
                 </div>
-                <div class="button">
-                    <a href="{{ url('/kompetisi/cp') }}">Read more</a>
+                <div class="btn">
+                    <a href="{{ url('/kompetisi/cp') }}">Read More</a>
                 </div>
             </div>
-            <div class="card-lomba">
+            <div class="card-lomba wow fadeInUp" data-wow-delay="0.3s">
 
                 <div class="card-img">
                     <img src="/image/icon-ctf.png" alt="" width="90px">
@@ -242,23 +238,23 @@
                 <div class="card-name">
                     Capture<br>the Flag
                 </div>
-                <div class="button">
+                <div class="btn">
                     <a href="{{ url('/kompetisi/ctf') }}">Read more</a>
                 </div>
             </div>
-            <div class="card-lomba">
+            <div class="card-lomba wow fadeInUp" data-wow-delay="0.6s">
 
                 <div class="card-img">
                     <img src="/image/icon-ppl.png" alt="" width="90px">
                 </div>
-                <div class="card-name">
+                <div class="card-name ppl">
                     Pengembangan<br>Perangkat Lunak
                 </div>
-                <div class="button">
+                <div class="btn">
                     <a href="{{ url('/kompetisi/ppl') }}">Read more</a>
                 </div>
             </div>
-            <div class="card-lomba">
+            <div class="card-lomba wow fadeInUp">
 
                 <div class="card-img">
                     <img src="/image/icon-iot.png" alt="" width="90px">
@@ -266,11 +262,11 @@
                 <div class="card-name">
                     Internet<br>of Things
                 </div>
-                <div class="button">
+                <div class="btn">
                     <a href="{{ url('/kompetisi/iot') }}">Read more</a>
                 </div>
             </div>
-            <div class="card-lomba">
+            <div class="card-lomba wow fadeInUp" data-wow-delay="0.3s">
 
                 <div class="card-img">
                     <img src="/image/icon-ux.png" alt="" width="90px">
@@ -278,7 +274,7 @@
                 <div class="card-name">
                     User<br>eXperience
                 </div>
-                <div class="button">
+                <div class="btn">
                     <a href="{{ url('/kompetisi/ux') }}">Read more</a>
                 </div>
             </div>
@@ -288,27 +284,27 @@
 
     <!--    gallery start-->
     <section class="gallery">
-        <div class="gallery-text">
+        <div class="gallery-text wow fadeInUp">
             GALERI
         </div>
         <div class="card-gallery">
-            <div class="gallery-img">
-                <img src="/image/galeri-1.jpg" alt="" width="300px">
+            <div class="gallery-img wow fadeInUp">
+                <img src="/image/galeri-1.jpg" alt="" width="300px" height="199.21px">
             </div>
-            <div class="gallery-img">
-                <img src="/image/galeri-2.jpg" alt="" width="300px">
+            <div class="gallery-img wow fadeInUp" data-wow-delay="0.3s">
+                <img src="/image/galeri-2.jpg" alt="" width="300px" height="199.21px">
             </div>
-            <div class="gallery-img">
-                <img src="/image/galeri-3.png" alt="" width="300px" height="199.21px">
+            <div class="gallery-img wow fadeInUp" data-wow-delay="0.6s">
+                <img src="/image/galeri-3.jpg" alt="" width="300px" height="199.21px">
             </div>
-            <div class="gallery-img">
-                <img src="/image/no-image.jpg" alt="" width="300px" height="199.21px">
+            <div class="gallery-img wow fadeInUp">
+                <img src="/image/galeri-4.jpg" alt="" width="300px" height="199.21px">
             </div>
-            <div class="gallery-img">
-                <img src="/image/no-image.jpg" alt="" width="300px" height="199.21px">
+            <div class="gallery-img wow fadeInUp" data-wow-delay="0.3s">
+                <img src="/image/galeri-5.jpg" alt="" width="300px" height="199.21px">
             </div>
-            <div class="gallery-img">
-                <img src="/image/no-image.jpg" alt="" width="300px" height="199.21px">
+            <div class="gallery-img wow fadeInUp" data-wow-delay="0.6s">
+                <img src="/image/galeri-6.jpg" alt="" width="300px" height="199.21px">
             </div>
         </div>
     </section>
@@ -316,27 +312,38 @@
 
     <!--    footer start-->
     <footer>
-        <div class="footer-card">
-            <div class="social-media">
-                <a href="" class="fab fa-facebook fa-2x"></a>
-                <a href="" class="fab fa-instagram fa-2x"></a>
-                <a href="" class="fab fa-twitter fa-2x"></a>
-                <a href="" class="fab fa-linkedin-in fa-2x"></a>
-            </div>
-            <div class="organized">
-                <div class="organized-text">
-                    Organized by:
+        <div class="container-fluid">
+            <div class="row footer-card">
+                <div class="col-md-6 social-media wow fadeInUp">
+                    <p class="footer-title">CONTACT US</p>
+                    <a href="" class="fab fa-facebook fa-2x"></a>
+                    <a href="" class="fab fa-instagram fa-2x"></a>
+                    <a href="" class="fab fa-twitter fa-2x"></a>
+                    <a href="" class="fab fa-linkedin-in fa-2x"></a>
                 </div>
-                <div class="organized-logo">
-                    <img src="/image/ugm-putih.png" alt="" width="70px">
-                    <img src="/image/komatik%20hd-white.png" alt="" width="70px">
+                <div class="col-md-6 organized wow fadeInUp" data-wow-delay="0.3s">
+                    <p class="footer-title">
+                        ORGANIZED BY
+                    </p>
+                    <div class="organized-logo">
+                        <img src="/image/ugm-putih.png" alt="" width="100px" style="padding-right: 10px;">
+                        <img src="/image/komatik%20hd-white.png" alt="" width="100px">
+                    </div>
                 </div>
-            </div>
-            <div class="copyright">
-                &#169; 2019 C-Compiler UGM
             </div>
         </div>
+        
+            <div class="copyright wow fadeInUp" data-wow-delay="0.6s">
+                &#169; 2019 C-Compiler UGM
+            </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lib/wowjs/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+    </script>
 </body>
 
 </html>
