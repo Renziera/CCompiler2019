@@ -149,8 +149,15 @@
 
                                 </div>
                                 @if(!$adaProposal)
+                                <br>
                                 @if($sudahWaktu)
-                                LOGIN KE PLATFORM
+                                Silahkan masuk ke platform
+                                <br>
+                                @if($cabang == 'cp')
+                                <a href="https://cp.komatikugm.web.id" target="_blank" rel="noopener noreferrer">Masuk Platform CP</a>
+                                @else
+                                <a href="https://ctf.asgama.web.id" target="_blank" rel="noopener noreferrer">Masuk Platform CTF</a>
+                                @endif
                                 @else
                                 Silahkan tunggu waktu mulai
                                 @endif
