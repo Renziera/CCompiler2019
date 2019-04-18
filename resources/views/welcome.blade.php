@@ -315,11 +315,11 @@
         <div class="container-fluid">
             <div class="row footer-card">
                 <div class="col-md-6 social-media wow fadeInUp">
-                    <p class="footer-title">CONTACT US</p>
-                    <a href="" class="fab fa-facebook fa-2x"></a>
-                    <a href="" class="fab fa-instagram fa-2x"></a>
-                    <a href="" class="fab fa-twitter fa-2x"></a>
-                    <a href="" class="fab fa-linkedin-in fa-2x"></a>
+                    <p class="footer-title">FOLLOW US</p>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/gemastikUGM/" class="fab fa-facebook fa-2x"></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/komatikugm/" class="fab fa-instagram fa-2x"></a>
+                    <a target="_blank" rel="noopener noreferrer" href="http://line.me/R/ti/p/@fsr3964v" class="fab fa-line fa-2x"></a>
+                    <a target="_blank" rel="noopener noreferrer" href="http://komatik.wg.ugm.ac.id/" class="fas fa-globe fa-2x"></a>
                 </div>
                 <div class="col-md-6 organized wow fadeInUp" data-wow-delay="0.3s">
                     <p class="footer-title">

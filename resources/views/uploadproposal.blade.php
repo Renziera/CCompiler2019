@@ -104,7 +104,7 @@
                                             <img src="/image/icon-upload.png" alt="" width="120px">
                                         </div>
                                         <div class="text-upload card-button" style="margin-bottom: 0px;">
-                                            Upload
+                                            UPLOAD
                                         </div>
                                         <div class="description" style="text-align: center; margin-bottom: 30px;">
                                             Silakan upload file dalam bentuk pdf
@@ -120,7 +120,7 @@
                                         <div class="">
                                             <div class="card-button">
                                                 <button type="submit" class="btn btn-primary">
-                                                    {{ __('Upload') }}
+                                                    {{ __('UPLOAD') }}
                                                 </button>
                                             </div>
                                         </div>

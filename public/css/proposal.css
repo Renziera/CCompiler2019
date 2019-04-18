@@ -22,9 +22,6 @@
 
 .navbar-brand {
     transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
 }
 
 .navbar-brand:hover {
@@ -35,11 +32,8 @@
     color: white;
     font-size: 13pt;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+    font-weight: bold;
     transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -57,9 +51,6 @@
     font-family: 'Montserrat';
     font-weight: 700;
     transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
     vertical-align: middle;
 }
 
@@ -142,9 +133,6 @@
     justify-content: center;
     margin-bottom: 15px;
     transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
 }
 
 .btn.btn-primary:hover {
@@ -217,11 +205,14 @@ input[type="file" i] {
 }
 
 .text-upload{
-    font-weight: 900;
     color: black;
     font-size: 25px;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 @keyframes ani {

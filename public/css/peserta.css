@@ -22,9 +22,6 @@
 
 .navbar-brand {
     transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
 }
 
 .navbar-brand:hover {
@@ -37,9 +34,6 @@
     font-family: 'Montserrat';
     font-weight: 900;
     transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -51,7 +45,7 @@
     background-image: linear-gradient(130deg, #62E7FE, #7D7BF4);
 }
 
-.btn-primary2{
+.btn-primary2 {
     border: none !important;
     background-color: transparent !important;
     padding: .5rem .1rem !important;
@@ -61,20 +55,17 @@
     font-family: 'Montserrat';
     font-weight: 700;
     transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
     vertical-align: middle;
 }
 
-.btn2{
+.btn2 {
     font-size: 13pt !important;
     font-weight: 700 !important;
     font-family: 'Montserrat' !important;
 }
 
-.dropdown:hover>.dropdown-menu {
-  display: block;
+.dropdown:hover > .dropdown-menu {
+    display: block;
 }
 
 .card {
@@ -82,6 +73,9 @@
     animation: ani 1.5s 1;
     border-radius: 30px;
     margin-top: 60px;
+    border: transparent;
+    box-shadow: 9px 3px 36px -9px rgba(0, 0, 0, 0.42);
+    padding: 15px;
 }
 
 .foreach div {
@@ -127,27 +121,44 @@
     padding: 20px;
 }
 
-.row{
+.row {
     margin-bottom: 20px;
     margin-left: 0px;
     margin-right: 0px;
 }
 
-.col-sm-6 {
-    width: 60%;
+.card-deck{
+    margin-top: -45px;
+}
+
+.card.card-info.text-center{
+    background-color: mediumpurple;
+    box-shadow: none;
+    padding: 0px;
 }
 
 .name {
-    font-size: 28px;
+    font-size: 20px;
     padding-bottom: 10px;
-    font-weight: 900;
-    background-color: mediumpurple;
+    font-weight: bold;
     border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    padding: 15px;
+    height: inherit;
     color: white;
 }
 
-h4 {
-    padding-top: 10px;
+.name h4 {
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #ffbbfd;
 }
 
 th {
@@ -160,7 +171,7 @@ th {
     margin-right: 10px;
 }
 
-.card-member{
+.card-member {
     padding-left: 50px;
     padding-right: 50px;
     margin-left: 50px;
@@ -171,59 +182,53 @@ th {
     padding-top: 40px;
     padding-bottom: 40px;
     border-radius: 30px;
-    box-shadow: 0px 0px 10px -2px #000000;
+    box-shadow: 9px 3px 36px -9px rgba(0, 0, 0, 0.42);
     transition-duration: 0.3s;
     transition-property: all;
     transition-timing-function: ease-in-out;
-    -webkit-transition-duration: 0.3s;
-    -webkit-transition-property: all;
-    -webkit-transition-timing-function: ease-in-out;
-    -moz-transition-duration: 0.3s;
-    -moz-transition-property: all;
-    -moz-transition-timing-function: ease-in-out;
-    -o-transition-duration: 0.3s;
-    -o-transition-property: all;
-    -o-transition-timing-function: ease-in-out;
     margin: 50px;
     animation: ani 1.5s 1;
     width: 30%;
-}
-
-.card-member:hover{
-    box-shadow: 0px 0px 10px -2px #6C36D2;
-    background-color: #EDFFFF;
+    font-size: 14pt;
 }
 
 .card-button a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    background-color: aqua;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 25px;
+    margin-top: 30px;
+    border-radius: 30px;
+    width: 150px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 10pt;
+    border: none;
+    text-align: center;
     background-image: linear-gradient(135deg, #73A3F8, #63E4FE);
     letter-spacing: 2px;
-    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    line-height: 30px;
+    justify-content: center;
+    margin-bottom: 15px;
     transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
+    color: white;
+    text-transform: uppercase;
+    padding: 12px;
 }
 
-.card-button a:hover{
+.card-button a:hover {
     opacity: 0.8;
+    text-decoration: none;
 }
 
-.card-prodi{
+.card-button a:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.card-prodi {
     margin-bottom: 20px;
 }
 
 .btn.btn-primary {
     border-radius: 30px;
-    width: auto;
+    width: 150px;
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 12pt;
@@ -236,14 +241,12 @@ th {
     justify-content: center;
     margin-bottom: 15px;
     transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
 }
 
 .btn.btn-primary:hover {
     opacity: 0.8;
 }
+
 
 @keyframes ani {
     0% {
@@ -268,14 +271,18 @@ th {
     .navbar-light .navbar-nav .nav-link:focus {
         color: white;
     }
-    
-    .btn-primary2{
+
+    .btn-primary2 {
         padding-left: 0 !important;
     }
 
     th {
         padding-left: 20px;
         padding-right: 20px;
+    }
+    
+    .card{
+        width: 100%;
     }
 }
 
@@ -289,24 +296,31 @@ th {
         padding-left: 20px;
         padding-right: 20px;
     }
-}
-
-@media screen and (max-width: 575px){
-    .col-sm-6{
-        margin-left: 20%;
-        margin-right: 20%;
+    
+    .card{
+        padding: 8px;
     }
 }
 
-@media screen and (max-width: 349px){
-    .card-member{
-        padding-left: 8px;
-        padding-right: 8px;
+@media screen and (max-width: 575px) {
+    .card {
+        width: 100%;
+    }
+    
+    .card-body{
+        padding: 30px;
     }
 }
 
-@media screen and (max-width: 829px){
-    .card-member{
+@media screen and (max-width: 349px) {
+    .card-member {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 829px) {
+    .card-member {
         width: auto;
     }
 }

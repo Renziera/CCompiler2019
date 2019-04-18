@@ -10,6 +10,9 @@
 
     <title>{{ config('app.name', 'CCompiler') }}</title>
 
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="/image/favicon.png">
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 

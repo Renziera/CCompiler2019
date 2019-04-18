@@ -122,27 +122,27 @@
                                     @endif
                                     <br>
                                     <br>
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-sm-6 text-center">
-                                                <div class="name" style="padding-top: 10px;">{{$name}}</div>
+                                    <div class="card-deck">
+                                        <div class="card card-info text-center">
+                                            <div class="name" style="padding-top: 10px;">
                                                 <h4>Nama Tim</h4>
+                                                {{$name}}
                                             </div>
-                                            <div class="col-sm-6 text-center">
-                                                <div class="name" style="padding-top: 10px;">
-                                                @if($cabang == 'cp')
-                                                Competitive Programming
-                                                @elseif($cabang == 'ctf')
-                                                Capture The Flag
-                                                @elseif($cabang == 'ppl')
-                                                Pengembangan Perangkat Lunak
-                                                @elseif($cabang == 'iot')
-                                                Internet of Things
-                                                @elseif($cabang == 'ux')
-                                                User eXperience
-                                                @endif
-                                                </div>
+                                        </div>
+                                        <div class="card card-info text-center">
+                                            <div class="name" style="padding-top: 10px;">
                                                 <h4>Cabang Lomba</h4>
+                                                @if($cabang == 'cp')
+                                                Competitive <br> Programming
+                                                @elseif($cabang == 'ctf')
+                                                Capture <br> The Flag
+                                                @elseif($cabang == 'ppl')
+                                                Pengembangan <br> Perangkat Lunak
+                                                @elseif($cabang == 'iot')
+                                                Internet <br> of Things
+                                                @elseif($cabang == 'ux')
+                                                User <br> eXperience
+                                                @endif
                                             </div>
                                         </div>
                                     </div>
