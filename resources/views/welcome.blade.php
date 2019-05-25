@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    
+    <!-- AOS CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Script-->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -214,12 +217,11 @@
 
     <!--    lomba start-->
     <section class="lomba" id="lomba">
-        <div class="lomba-title wow fadeInUp">
+        <div class="lomba-title" data-aos="zoom-in" data-aos-duration="800">
             LOMBA
         </div>
-        <div class="card">
-            <div class="card-lomba wow fadeInUp">
-
+        <div class="card" >
+            <div class="card-lomba" data-aos="zoom-in" data-aos-duration="800">
                 <div class="card-img">
                     <img src="/image/icon-cp.png" alt="" width="90px">
                 </div>
@@ -230,8 +232,7 @@
                     <a href="{{ url('/kompetisi/cp') }}">Read More</a>
                 </div>
             </div>
-            <div class="card-lomba wow fadeInUp" data-wow-delay="0.3s">
-
+            <div class="card-lomba" data-aos="zoom-in" data-aos-duration="800">
                 <div class="card-img">
                     <img src="/image/icon-ctf.png" alt="" width="90px">
                 </div>
@@ -242,8 +243,7 @@
                     <a href="{{ url('/kompetisi/ctf') }}">Read more</a>
                 </div>
             </div>
-            <div class="card-lomba wow fadeInUp" data-wow-delay="0.6s">
-
+            <div class="card-lomba" data-aos="zoom-in" data-aos-duration="800">
                 <div class="card-img">
                     <img src="/image/icon-ppl.png" alt="" width="90px">
                 </div>
@@ -254,8 +254,7 @@
                     <a href="{{ url('/kompetisi/ppl') }}">Read more</a>
                 </div>
             </div>
-            <div class="card-lomba wow fadeInUp">
-
+            <div class="card-lomba" data-aos="zoom-in" data-aos-duration="800">
                 <div class="card-img">
                     <img src="/image/icon-iot.png" alt="" width="90px">
                 </div>
@@ -266,7 +265,7 @@
                     <a href="{{ url('/kompetisi/iot') }}">Read more</a>
                 </div>
             </div>
-            <div class="card-lomba wow fadeInUp" data-wow-delay="0.3s">
+            <div class="card-lomba" data-aos="zoom-in" data-aos-duration="800">
 
                 <div class="card-img">
                     <img src="/image/icon-ux.png" alt="" width="90px">
@@ -284,26 +283,26 @@
 
     <!--    gallery start-->
     <section class="gallery">
-        <div class="gallery-text wow fadeInUp">
+        <div class="gallery-text" data-aos="zoom-in" data-aos-duration="800">
             GALERI
         </div>
         <div class="card-gallery">
-            <div class="gallery-img wow fadeInUp">
+            <div class="gallery-img" data-aos="zoom-in" data-aos-duration="800">
                 <img src="/image/galeri-1.jpg" alt="" width="300px" height="199.21px">
             </div>
-            <div class="gallery-img wow fadeInUp" data-wow-delay="0.3s">
+            <div class="gallery-img " data-aos="zoom-in" data-aos-duration="800">
                 <img src="/image/galeri-2.jpg" alt="" width="300px" height="199.21px">
             </div>
-            <div class="gallery-img wow fadeInUp" data-wow-delay="0.6s">
+            <div class="gallery-img" data-aos="zoom-in" data-aos-duration="800">
                 <img src="/image/galeri-3.jpg" alt="" width="300px" height="199.21px">
             </div>
-            <div class="gallery-img wow fadeInUp">
+            <div class="gallery-img" data-aos="zoom-in" data-aos-duration="800">
                 <img src="/image/galeri-4.jpg" alt="" width="300px" height="199.21px">
             </div>
-            <div class="gallery-img wow fadeInUp" data-wow-delay="0.3s">
+            <div class="gallery-img" data-aos="zoom-in" data-aos-duration="800">
                 <img src="/image/galeri-5.jpg" alt="" width="300px" height="199.21px">
             </div>
-            <div class="gallery-img wow fadeInUp" data-wow-delay="0.6s">
+            <div class="gallery-img" data-aos="zoom-in" data-aos-duration="800">
                 <img src="/image/galeri-6.jpg" alt="" width="300px" height="199.21px">
             </div>
         </div>
@@ -314,14 +313,14 @@
     <footer>
         <div class="container-fluid">
             <div class="row footer-card">
-                <div class="col-md-6 social-media wow fadeInUp">
+                <div class="col-md-6 social-media">
                     <p class="footer-title">FOLLOW US</p>
                     <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/gemastikUGM/" class="fab fa-facebook fa-2x"></a>
                     <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/komatikugm/" class="fab fa-instagram fa-2x"></a>
                     <a target="_blank" rel="noopener noreferrer" href="http://line.me/R/ti/p/@fsr3964v" class="fab fa-line fa-2x"></a>
                     <a target="_blank" rel="noopener noreferrer" href="http://komatik.wg.ugm.ac.id/" class="fas fa-globe fa-2x"></a>
                 </div>
-                <div class="col-md-6 organized wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-md-6 organized" >
                     <p class="footer-title">
                         ORGANIZED BY
                     </p>
@@ -333,16 +332,33 @@
             </div>
         </div>
         
-            <div class="copyright wow fadeInUp" data-wow-delay="0.6s">
+            <div class="copyright" >
                 &#169; 2019 C-Compiler UGM
             </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--
     <script src="lib/wowjs/dist/wow.min.js"></script>
     <script>
         new WOW().init();
-
+    </script>
+-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(window).scrollTop()>100){
+                    $('nav').addClass('custom-navbar-bg');
+                }
+                else{
+                    $('nav').removeClass('custom-navbar-bg');
+                }
+            });
+        });
     </script>
 </body>
 
